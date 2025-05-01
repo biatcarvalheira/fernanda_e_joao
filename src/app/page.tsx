@@ -2,15 +2,10 @@
 
 import { useState, useRef } from "react";
 import Navbar from "../components/navbar";
-import { Lora } from "next/font/google";
 import { Parisienne } from "next/font/google";
 
 
 // Fonts
-const lora = Lora({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
 
 const parisienne = Parisienne({
   subsets: ["latin"],
@@ -21,9 +16,6 @@ export default function Home() {
   const [showWebsite, setShowWebsite] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false);
 
-  const handleVideoEnd = () => {
-    setShowWebsite(true);
-  };
 
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -64,15 +56,26 @@ export default function Home() {
           <main className="pt-15">
             {/* Hero Section */}
             <section id="hero" style={{ backgroundColor: "#aaa3c5" }} className="h-screen flex flex-col justify-center items-center">
-            <h1 className={`${parisienne.className} text-6xl md:text-8xl`}>
+            <h1 className={`${parisienne.className} text-6xl md:text-8xl text-center`}>
   Barbara & Bruno
-</h1>       <p className="mt-4 text-xl">Nosso grande dia</p>
+</h1>      <p className="mt-4 text-xl">imagem</p>
             </section>
+            {/* RSVP */}
+            <section id="rsvp" className="min-h-screen flex flex-col justify-center items-center bg-white px-4 py-16">
+  <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center">RSVP</h2>
 
-            {/* Temporario */}
-            <section id="temp" className="min-h-screen flex flex-col justify-center items-center bg-white">
-              <h2 className="text-3xl md:text-5xl font-bold mb-4">EM CONSTRUÇÃO</h2>
-            </section>
+  <div className="w-full max-w-3xl">
+  <iframe
+  src="https://form.jotform.com/251202979014049"
+  title="RSVP Form"
+  width="100%"
+  height="600"
+  style={{ border: "none" }}
+  allow="geolocation; microphone; camera; fullscreen"
+  loading="lazy"
+/>
+  </div>
+</section>
           </main>
         </div>
       )}

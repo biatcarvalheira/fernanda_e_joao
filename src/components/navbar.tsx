@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Lora } from "next/font/google";
 import { Dancing_Script } from "next/font/google";
+import { Parisienne } from "next/font/google";
 
 // Fonts
 const lora = Lora({
@@ -14,6 +15,13 @@ const dancingScript = Dancing_Script({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
+
+
+const parisienne = Parisienne({
+  subsets: ["latin"],
+  weight: "400", // Parisienne only comes in 400
+});
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +41,7 @@ const Navbar = () => {
       style={{ backgroundColor: "#1c5134" }}
       className={`${lora.className} fixed top-0 left-0 w-full z-40 p-4 flex items-center text-white`}
     >
-      <h1 className={`${dancingScript.className} text-lg font-bold tracking-widest mr-8`}>
+      <h1 className={`${parisienne.className} text-lg font-bold tracking-widest mr-8`}>
         Barbara e Bruno
       </h1>
 {/* Desktop Menu */}
