@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Lora } from "next/font/google";
-import { Dancing_Script } from "next/font/google";
 import { Parisienne } from "next/font/google";
 
 // Fonts
@@ -10,12 +9,6 @@ const lora = Lora({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
-
-const dancingScript = Dancing_Script({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
 
 const parisienne = Parisienne({
   subsets: ["latin"],
