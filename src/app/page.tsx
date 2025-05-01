@@ -26,6 +26,7 @@ export default function Home() {
     return "/videos/intro_desktop.mp4";
   };
 
+  
   return (
     <>
       {/* Video Intro */}
