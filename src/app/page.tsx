@@ -3,11 +3,18 @@
 import { useState, useRef } from "react";
 import Navbar from "../components/navbar";
 import { Parisienne } from "next/font/google";
+import { Lora } from "next/font/google";
+
 
 // Fontes
 const parisienne = Parisienne({
   subsets: ["latin"],
   weight: "400", // Parisienne só tem peso 400
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export default function Home() {
@@ -66,26 +73,27 @@ export default function Home() {
             </section>
 
             {/* Seção RSVP */}
-            <section
-              id="rsvp"
-              className="min-h-screen flex flex-col justify-center items-center bg-white px-4 py-16"
-            >
-              <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center">
-                RSVP
-              </h2>
+       <section
+  id="rsvp"
+  className="min-h-screen flex flex-col justify-center items-center bg-white px-4 py-16"
+>
+  <h2 className={`${lora.className} text-3xl md:text-5xl font-bold mb-6 text-center`}>
+    RSVP
+  </h2>
 
-              <div className="w-full max-w-3xl">
-                <iframe
-                  src="https://form.jotform.com/251202979014049"
-                  title="RSVP Form"
-                  width="100%"
-                  height="600"
-                  style={{ border: "none" }}
-                  allow="geolocation; microphone; camera; fullscreen"
-                  loading="lazy"
-                />
-              </div>
-            </section>
+    <div className="w-full max-w-3xl">
+      <iframe
+        src="https://sistema.assessoriavip.com.br/rsvpUnico/e9816b60-087a-11ef-a198-0bece7b34b19"
+        title="RSVP Form"
+        width="100%"
+        height="600"
+        style={{ border: "none" }}
+        allow="geolocation; microphone; camera; fullscreen"
+        loading="lazy"
+      />
+    </div>
+    </section>
+
           </main>
         </div>
       )}
