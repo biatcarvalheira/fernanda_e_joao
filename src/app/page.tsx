@@ -4,6 +4,8 @@ import { useState, useRef } from "react";
 import Navbar from "../components/navbar";
 import { Parisienne } from "next/font/google";
 import { Lora } from "next/font/google";
+import { Uncial_Antiqua } from "next/font/google";
+
 
 
 // Fontes
@@ -16,6 +18,13 @@ const lora = Lora({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
+
+const uncial = Uncial_Antiqua({
+  subsets: ["latin"],
+  weight: "400",
+});
+
+
 
 export default function Home() {
   const [showWebsite, setShowWebsite] = useState(false);
@@ -34,9 +43,8 @@ export default function Home() {
       {/* Intro Vídeo */}
       {!showWebsite && (
         <div
-          className={`fixed inset-0 z-50 bg-black transition-opacity duration-1000 ${
-            videoEnded ? "opacity-0 pointer-events-none" : "opacity-100"
-          }`}
+          className={`fixed inset-0 z-50 bg-black transition-opacity duration-1000 ${videoEnded ? "opacity-0 pointer-events-none" : "opacity-100"
+            }`}
         >
           <video
             ref={videoRef}
@@ -71,28 +79,50 @@ export default function Home() {
               </h1>
               <p className="mt-4 text-xl">imagem</p>
             </section>
+            {/* Seção Intro */}
+           <section
+  id="intro"
+  className="relative min-h-screen bg-[url('/images/intro-full.png')] bg-cover bg-center flex justify-center items-center px-2 py-16"
+>
+  <div className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[30%] flex items-center justify-center px-4 sm:px-6 md:px-10">
+    <div className={`${uncial.className} text-[#3b2a1a] text-base sm:text-lg md:text-xl leading-relaxed text-justify`}>
+      <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#6f2079] first-letter:leading-[1] first-letter:mr-2 first-letter:tracking-tighter first-letter:align-top first-letter:pt-1 ml-[-0.5rem]">
+        Queridos amigos e família, estamos nos aproximando do nosso tão sonhado casamento. Esse dia, assim como nosso amor, foi pensado e concebido nos mínimos detalhes.
+      </p>
+      <p className="mt-6">
+        Esperamos que vocês possam sentir a energia mágica do nosso conto de fadas escocês e estejam muito dispostos a celebrar essa união conosco. Aqui, vocês encontrarão tudo o que precisam saber sobre a nossa celebração.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
 
             {/* Seção RSVP */}
-       <section
-  id="rsvp"
-  className="min-h-screen flex flex-col justify-center items-center bg-white px-4 py-16"
->
-  <h2 className={`${lora.className} text-3xl md:text-5xl font-bold mb-6 text-center`}>
-    RSVP
-  </h2>
+            <section
+              id="rsvp"
+              className="min-h-screen flex flex-col justify-center items-center bg-white px-4 py-16"
+            >
+              <h2 className={`${lora.className} text-3xl md:text-5xl font-bold mb-6 text-center`}>
+                RSVP
+              </h2>
 
-    <div className="w-full max-w-3xl">
-      <iframe
-        src="https://sistema.assessoriavip.com.br/rsvpUnico/e9816b60-087a-11ef-a198-0bece7b34b19"
-        title="RSVP Form"
-        width="100%"
-        height="600"
-        style={{ border: "none" }}
-        allow="geolocation; microphone; camera; fullscreen"
-        loading="lazy"
-      />
-    </div>
-    </section>
+              <div className="w-full max-w-3xl">
+                <iframe
+                  src="https://sistema.assessoriavip.com.br/rsvpUnico/e9816b60-087a-11ef-a198-0bece7b34b19"
+                  title="RSVP Form"
+                  width="100%"
+                  height="600"
+                  style={{ border: "none" }}
+                  allow="geolocation; microphone; camera; fullscreen"
+                  loading="lazy"
+                />
+              </div>
+            </section>
 
           </main>
         </div>

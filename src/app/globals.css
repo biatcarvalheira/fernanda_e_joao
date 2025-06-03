@@ -41,3 +41,13 @@ html {
     opacity: 0;
   }
 }
+
+.dropcap p::first-letter {
+  font-size: 3.5rem;
+  float: left;
+  line-height: 1;
+  padding-right: 0.3rem;
+  font-weight: 400;
+  color: #4b2e2e;
+}
+
