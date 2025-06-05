@@ -1,12 +1,10 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import Navbar from "../components/navbar";
-import { Parisienne } from "next/font/google";
-import { Lora } from "next/font/google";
-import { Uncial_Antiqua } from "next/font/google";
+import { Parisienne, Lora, Uncial_Antiqua } from "next/font/google";
 
-// Fontes
+// Fonts
 const parisienne = Parisienne({
   subsets: ["latin"],
   weight: "400",
@@ -25,28 +23,35 @@ const uncial = Uncial_Antiqua({
 export default function Home() {
   const [showWebsite, setShowWebsite] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false);
-  const [videoSrc, setVideoSrc] = useState("/videos/intro_desktop.mp4");
   const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.innerWidth < 768) {
-      setVideoSrc("/videos/intro_mobile.mp4");
-    }
-  }, []);
 
   return (
     <>
-      {/* Intro Vídeo */}
+      {/* Intro Video */}
       {!showWebsite && (
         <div
           className={`fixed inset-0 z-50 bg-black transition-opacity duration-1000 ${
             videoEnded ? "opacity-0 pointer-events-none" : "opacity-100"
           }`}
         >
+          {/* Mobile Intro */}
           <video
             ref={videoRef}
-            className="w-full h-full object-cover"
-            src={videoSrc}
+            className="w-full h-full object-cover md:hidden"
+            src="/videos/intro_mobile.mp4"
+            autoPlay
+            muted
+            playsInline
+            onEnded={() => {
+              setVideoEnded(true);
+              setTimeout(() => setShowWebsite(true), 2000);
+            }}
+          />
+          {/* Desktop Intro */}
+          <video
+            ref={videoRef}
+            className="w-full h-full object-cover hidden md:block"
+            src="/videos/intro_desktop.mp4"
             autoPlay
             muted
             playsInline
@@ -58,14 +63,13 @@ export default function Home() {
         </div>
       )}
 
-      {/* Site principal */}
+      {/* Main Website */}
       {showWebsite && (
         <div>
           <Navbar />
           <main className="pt-15">
-            {/* Seção Hero */}
+            {/* Hero Section */}
             <section id="hero" className="relative h-screen w-full overflow-hidden">
-              {/* Mobile version */}
               <video
                 className="absolute inset-0 w-full h-full object-cover md:hidden"
                 src="/videos/hero-mobile.mp4"
@@ -74,8 +78,6 @@ export default function Home() {
                 loop
                 playsInline
               />
-
-              {/* Desktop version */}
               <video
                 className="absolute inset-0 w-full h-full object-cover hidden md:block"
                 src="/videos/hero-desktop.mp4"
@@ -86,7 +88,7 @@ export default function Home() {
               />
             </section>
 
-            {/* Seção Intro */}
+            {/* Intro Section */}
             <section
               id="intro"
               className="relative min-h-screen bg-[url('/images/intro-full.png')] bg-cover bg-center flex justify-center items-center px-2 py-16"
@@ -105,7 +107,7 @@ export default function Home() {
               </div>
             </section>
 
-            {/* Seção RSVP */}
+            {/* RSVP Section */}
             <section
               id="rsvp"
               className="min-h-screen flex flex-col justify-center items-center bg-white px-4 py-16"
