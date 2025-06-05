@@ -2,13 +2,9 @@
 
 import { useState, useRef } from "react";
 import Navbar from "../components/navbar";
-import { Parisienne, Lora, Uncial_Antiqua } from "next/font/google";
+import { Lora, Uncial_Antiqua } from "next/font/google";
 
 // Fonts
-const parisienne = Parisienne({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 const lora = Lora({
   subsets: ["latin"],
