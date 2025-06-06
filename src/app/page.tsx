@@ -84,24 +84,33 @@ export default function Home() {
               />
             </section>
 
-            {/* Intro Section */}
-            <section
-              id="intro"
-              className="relative min-h-screen bg-[url('/images/intro-full.png')] bg-cover bg-center flex justify-center items-center px-2 py-16"
-            >
-              <div className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[30%] flex items-center justify-center px-4 sm:px-6 md:px-10">
-                <div
-                  className={`${uncial.className} text-[#3b2a1a] text-base sm:text-lg md:text-xl leading-relaxed text-justify`}
-                >
-                  <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#6f2079] first-letter:leading-[1] first-letter:mr-2 first-letter:tracking-tighter first-letter:align-top first-letter:pt-1 ml-[-0.5rem]">
-                    Queridos amigos e família, estamos nos aproximando do nosso tão sonhado casamento. Esse dia, assim como nosso amor, foi pensado e concebido nos mínimos detalhes.
-                  </p>
-                  <p className="mt-6">
-                    Esperamos que vocês possam sentir a energia mágica do nosso conto de fadas escocês e estejam muito dispostos a celebrar essa união conosco. Aqui, vocês encontrarão tudo o que precisam saber sobre a nossa celebração.
-                  </p>
-                </div>
-              </div>
-            </section>
+{/* Section Intro */}
+<section
+  id="intro"
+  className="relative min-h-screen bg-[url('/images/intro-mobile.png')] sm:bg-[url('/images/intro-full.png')] bg-cover bg-center flex justify-center items-center px-2 py-16"
+>
+  <div className="w-[80%] sm:w-[70%] md:w-[55%] lg:w-[30%] flex items-center justify-center px-2 sm:px-4 md:px-6">
+    <div
+      className={`
+        ${uncial.className} text-[#3b2a1a]
+        text-xs sm:text-sm md:text-base
+        leading-relaxed text-justify
+        overflow-visible
+        pt-6
+      `}
+    >
+      <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#6f2079] first-letter:leading-[0.8] first-letter:mr-2 first-letter:tracking-tight ml-[-0.5rem]">
+        Queridos amigos e família, estamos nos aproximando do nosso tão sonhado casamento. Esse dia, assim como nosso amor, foi pensado e concebido nos mínimos detalhes.
+      </p>
+      <p className="mt-6">
+        Esperamos que vocês possam sentir a energia mágica do nosso conto de fadas escocês e estejam muito dispostos a celebrar essa união conosco. Aqui, vocês encontrarão tudo o que precisam saber sobre a nossa celebração.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
 
             {/* RSVP Section */}
             <section
