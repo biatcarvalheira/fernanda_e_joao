@@ -108,6 +108,70 @@ export default function Home() {
               </div>
             </section>
 
+{/* Programa 1 - Text on Right */}
+<section className="relative min-h-screen flex items-center justify-center">
+  {/* Background Video - Mobile */}
+  <video
+    className="absolute inset-0 w-full h-full object-cover md:hidden"
+    src="/videos/program-1-mobile.mp4"
+    autoPlay
+    muted
+    loop
+    playsInline
+  />
+  {/* Background Video - Desktop */}
+  <video
+    className="absolute inset-0 w-full h-full object-cover hidden md:block"
+    src="/videos/program-1-desktop.mp4"
+    autoPlay
+    muted
+    loop
+    playsInline
+  />
+
+  {/* Text Block - Right Side */}
+  <div className="relative z-10 w-full md:w-[35%] max-w-md ml-[15%] px-6 py-12">
+    <div className={`${uncial.className} text-[#3b2a1a] text-base sm:text-lg md:text-xl leading-relaxed text-justify`}>
+      <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#6f2079] first-letter:leading-[1] first-letter:mr-2 first-letter:tracking-tight ml-[-0.5rem]">
+        A cerimonia será as 16hrs do dia 10/10/10 no Vale dos Desejos.
+      </p>
+      <p className="mt-6">
+        A festa ocorrerá seguida da cerimonia no mesmo local.
+      </p>
+    </div>
+  </div>
+</section>
+
+{/* Programa 2 - Text on Left */}
+<section className="relative min-h-screen flex items-center justify-center">
+  {/* Background Video - Mobile */}
+  <video
+    className="absolute inset-0 w-full h-full object-cover md:hidden"
+    src="/videos/program-2-mobile.mp4"
+    autoPlay
+    muted
+    loop
+    playsInline
+  />
+  {/* Background Video - Desktop */}
+  <video
+    className="absolute inset-0 w-full h-full object-cover hidden md:block"
+    src="/videos/program-2-desktop.mp4"
+    autoPlay
+    muted
+    loop
+    playsInline
+  />
+
+  {/* Text Block - Left Side */}
+  <div className="relative z-10relative z-10 w-[80%] sm:w-[70%] md:w-[35%] max-w-md mr-[10%] mt-16 px-6 py-12 w-full md:w-[35%] max-w-md mr-[10%] mt-16 px-6 py-12">
+    <div className={`${uncial.className} text-[#3b2a1a] text-base sm:text-lg md:text-xl leading-relaxed text-justify`}>
+      <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#6f2079] first-letter:leading-[1] first-letter:mr-2 first-letter:tracking-tight ml-[-0.5rem]">
+       Traje sugerido: pedimos que usem roupas em branco ou off-white
+      </p>
+    </div>
+  </div>
+</section>
 
 
 
