@@ -20,7 +20,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const sections = [
-    { id: "programacao", label: "PROGRAMAÇÃO" },
+    { id: "programa-direita", label: "PROGRAMAÇÃO" },
     { id: "como-chegar", label: "COMO CHEGAR" },
     { id: "transporte", label: "TRANSPORTE" },
     { id: "hoteis", label: "HOTEIS" },
