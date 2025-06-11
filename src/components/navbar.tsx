@@ -23,10 +23,10 @@ const Navbar = () => {
     { id: "programa-direita", label: "PROGRAMAÇÃO" },
     { id: "como-chegar", label: "COMO CHEGAR" },
     { id: "transporte", label: "TRANSPORTE" },
-    { id: "hoteis", label: "HOTEIS" },
+    { id: "hoteis", label: "HOSPEDAGEM" },
     { id: "cabelo-make", label: "CABELO & MAKE" },
     { id: "presentes", label: "PRESENTES" },
-    { id: "rsvp", label: "RSVP" },
+    { id: "rsvp-intro", label: "RSVP" },
   ];
 
   return (
