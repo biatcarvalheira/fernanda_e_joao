@@ -26,7 +26,7 @@ const Navbar = () => {
     { id: "hoteis", label: "HOSPEDAGEM" },
     { id: "cabelo-make", label: "CABELO & MAKE" },
     { id: "presentes", label: "PRESENTES" },
-    { id: "rsvp-introc", label: "RSVP" },
+    { id: "rsvp-intro", label: "RSVP" },
   ];
 
   return (
