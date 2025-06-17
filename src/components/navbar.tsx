@@ -31,10 +31,11 @@ const Navbar = () => {
 
   return (
     <nav
-      style={{ backgroundColor: "#1c5134" }}
+      style={{ backgroundColor: "#307850" }}
       className={`${lora.className} fixed top-0 left-0 w-full z-40 p-4 flex items-center text-white`}
     >
-      <h1 className={`${parisienne.className} text-lg font-bold tracking-widest mr-8`}>
+      <h1 className={`${parisienne.className} text-3xl font-bold tracking-widest mr-8`}>
+
         Barbara e Bruno
       </h1>
 {/* Desktop Menu */}

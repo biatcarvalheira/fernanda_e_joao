@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import Navbar from "../components/navbar";
-import { Lora, Uncial_Antiqua } from "next/font/google";
+import { Lora, Cinzel } from "next/font/google";
 
 // Fonts
 
@@ -11,9 +11,9 @@ const lora = Lora({
   weight: ["400", "700"],
 });
 
-const uncial = Uncial_Antiqua({
+const cinzel = Cinzel({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "700"],
 });
 
 export default function Home() {
@@ -91,17 +91,17 @@ export default function Home() {
               <div className="w-[80%] sm:w-[70%] md:w-[55%] lg:w-[30%] flex items-center justify-center px-2 sm:px-4 md:px-6">
                 <div
                   className={`
-        ${uncial.className} text-[#3b2a1a]
+        ${cinzel.className} text-[#3b2a1a]
         text-xs sm:text-sm md:text-base
         leading-relaxed text-justify
         overflow-visible
         pt-6
       `}
                 >
-                  <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#6f2079] first-letter:leading-[0.8] first-letter:mr-2 first-letter:tracking-tight ml-[-0.5rem]">
+                  <p className="font-bold first-letter:text-7xl first-letter:font-bold first-letter:text-[#6f2079] first-letter:leading-[1] first-letter:mr-3 first-letter:tracking-tight ml-[-0.25rem]">
                     Queridos amigos e família, estamos nos aproximando do nosso tão sonhado casamento. Esse dia, assim como nosso amor, foi pensado e concebido nos mínimos detalhes.
                   </p>
-                  <p className="mt-6">
+                  <p className="mt-6 font-bold">
                     Esperamos que vocês possam sentir a energia mágica do nosso conto de fadas escocês e estejam muito dispostos a celebrar essa união conosco. Aqui, vocês encontrarão tudo o que precisam saber sobre a nossa celebração.
                   </p>
                 </div>
@@ -131,7 +131,7 @@ export default function Home() {
 
               {/* Text Block - Right Side */}
               <div className="relative z-10 w-full md:w-[35%] max-w-md ml-[15%] px-6 py-12">
-                <div className={`${uncial.className} text-[#3b2a1a] text-base sm:text-lg md:text-xl leading-relaxed text-justify`}>
+                <div className={`${cinzel.className} text-[#3b2a1a] font-bold text-base sm:text-lg md:text-xl leading-relaxed text-justify`}>
                   <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#6f2079] first-letter:leading-[1] first-letter:mr-2 first-letter:tracking-tight ml-[-0.5rem]">
                     A cerimonia será às 16hrs do dia 15/11/25 na àrea externa da Vinicola Vale dos Desejos.
                   </p>
@@ -165,7 +165,7 @@ export default function Home() {
 
               {/* Text Block - Left Side */}
               <div className="relative z-10relative z-10 w-[80%] sm:w-[70%] md:w-[35%] max-w-md mr-[10%] mt-16 px-6 py-12 w-full md:w-[35%] max-w-md mr-[10%] mt-16 px-6 py-12">
-                <div className={`${uncial.className} text-[#3b2a1a] text-base sm:text-lg md:text-xl leading-relaxed text-justify`}>
+                <div className={`${cinzel.className} text-[#3b2a1a] font-bold text-base sm:text-lg md:text-xl leading-relaxed text-justify`}>
                   <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#6f2079] first-letter:leading-[1] first-letter:mr-2 first-letter:tracking-tight ml-[-0.5rem]">
                     Traje sugerido: pedimos que usem roupas em branco ou off-white
                   </p>
@@ -179,7 +179,7 @@ export default function Home() {
               className="relative min-h-screen w-full bg-[url('/images/hoteis-mobile.png')] md:bg-[url('/images/hoteis-desktop.png')] bg-cover bg-center"
             >
               <div className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-16">
-                <h2 className={`${uncial.className} text-3xl md:text-4xl font-bold mb-6 text-center text-black`}>
+                <h2 className={`${cinzel.className} text-3xl md:text-4xl font-bold mb-6 text-center text-black`}>
                   <span className="text-6xl align-top font-bold leading-none mr-1 text-[#6f2079]">H</span>oteis
                 </h2>
                 <ul className={`${lora.className} text-[#3b2a1a] text-base sm:text-lg md:text-xl leading-relaxed text-left space-y-6 list-none max-w-[18rem] px-8`}>
@@ -237,7 +237,7 @@ export default function Home() {
               className="relative min-h-screen w-full bg-[url('/images/casas-mobile.png')] md:bg-[url('/images/casas-desktop.png')] bg-cover bg-center"
             >
               <div className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-16">
-                <h2 className={`${uncial.className} text-3xl md:text-4xl font-bold mb-6 text-center text-black`}>
+                <h2 className={`${cinzel.className} text-3xl md:text-4xl font-bold mb-6 text-center text-black`}>
                   <span className="text-6xl align-top font-bold leading-none mr-1 text-[#6f2079]">C</span>asas para locação no Condominio Fazenda Santa Monica (11km)
                 </h2>
                 <ul className={`${lora.className} text-[#3b2a1a] text-base sm:text-lg md:text-xl leading-relaxed text-left space-y-6 list-none max-w-[18rem] px-8`}>
@@ -279,7 +279,7 @@ export default function Home() {
                 href="https://www.seu-site-de-presentes.com" // Replace with your actual URL
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`${uncial.className} absolute top-10 left-1/2 transform -translate-x-1/2 text-[#684778] text-5xl md:text-7xl hover:text-[#6f2079] transition duration-300`}
+                className={`${cinzel.className} absolute top-10 left-1/2 transform -translate-x-1/2 text-[#684778] font-bold text-5xl md:text-7xl hover:text-[#6f2079] transition duration-300`}
               >
                 PRESENTES
               </a>
@@ -296,7 +296,7 @@ export default function Home() {
               <div className="relative z-10 text-center">
                 <a
                   href="/rsvp"
-                  className={`${uncial.className} text-[#684778] text-5xl md:text-7xl hover:text-[#6f2079] transition duration-300`}
+                  className={`${cinzel.className} text-[#684778] font-bold text-5xl md:text-7xl hover:text-[#6f2079] transition duration-300`}
                 >
                   RSVP
                 </a>
