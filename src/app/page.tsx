@@ -131,7 +131,8 @@ export default function Home() {
 
               {/* Text Block - Right Side */}
               <div className="relative z-10 w-full md:w-[35%] max-w-md ml-[15%] px-6 py-12">
-                <div className={`${cinzel.className} text-[#3b2a1a] font-bold text-base sm:text-lg md:text-xl leading-relaxed text-justify`}>
+                <div className={`${cinzel.className} text-[#3b2a1a] font-bold text-lg sm:text-xl md:text-2xl leading-relaxed text-justify`}>
+
                   <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#6f2079] first-letter:leading-[1] first-letter:mr-2 first-letter:tracking-tight ml-[-0.5rem]">
                     A cerimonia será às 16hrs do dia 15/11/25 na àrea externa da Vinicola Vale dos Desejos.
                   </p>
@@ -165,7 +166,7 @@ export default function Home() {
 
               {/* Text Block - Left Side */}
               <div className="relative z-10relative z-10 w-[80%] sm:w-[70%] md:w-[35%] max-w-md mr-[10%] mt-16 px-6 py-12 w-full md:w-[35%] max-w-md mr-[10%] mt-16 px-6 py-12">
-                <div className={`${cinzel.className} text-[#3b2a1a] font-bold text-base sm:text-lg md:text-xl leading-relaxed text-justify`}>
+                <div className={`${cinzel.className} text-[#3b2a1a] font-bold text-lg sm:text-xl md:text-2xl leading-relaxed text-justify`}>
                   <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#6f2079] first-letter:leading-[1] first-letter:mr-2 first-letter:tracking-tight ml-[-0.5rem]">
                     Traje sugerido: pedimos que usem roupas em branco ou off-white
                   </p>
@@ -174,63 +175,91 @@ export default function Home() {
             </section>
 
             {/* Hoteis */}
-            <section
-              id="hoteis"
-              className="relative min-h-screen w-full bg-[url('/images/hoteis-mobile.png')] md:bg-[url('/images/hoteis-desktop.png')] bg-cover bg-center"
-            >
-              <div className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-16">
-                <h2 className={`${cinzel.className} text-3xl md:text-4xl font-bold mb-6 text-center text-black`}>
-                  <span className="text-6xl align-top font-bold leading-none mr-1 text-[#6f2079]">H</span>oteis
-                </h2>
-                <ul className={`${lora.className} text-[#3b2a1a] text-base sm:text-lg md:text-xl leading-relaxed text-left space-y-6 list-none max-w-[18rem] px-8`}>
-                  <li>
-                    <a href="https://www.airbnb.com.br/rooms/16486376?check_in=2021-09-25&check_out=2021-09-27&guests=1&adults=16&s=13&unique_share_id=b8f83b3e-fe23-4caa-a38f-08eaf0a8af84"
-                      target="_blank" rel="noopener noreferrer" className="underline hover:text-[#6f2079]">
-                      Fazenda Passatempo (2 km)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://pousada-novo-xodo.negocio.site/"
-                      target="_blank" rel="noopener noreferrer" className="underline hover:text-[#6f2079]">
-                      Pousada Novo Xodó (19 km)
-                    </a>
-                    <p>Tel.: 24-992236167, Reservas disponíveis pelo Booking também.</p>
-                  </li>
-                  <li>
-                    <a href="https://www.fazendadocedro.com.br"
-                      target="_blank" rel="noopener noreferrer" className="underline hover:text-[#6f2079]">
-                      Hotel Solar Fazenda do Cedro (23 km)
-                    </a>
-                    <p>Tel.: 24-22233618 / 24-988821378</p>
-                    <p>comercial@fazendadocedro.com.br</p>
-                  </li>
-                  <li>
-                    <a href="https://casamarambaia.com.br"
-                      target="_blank" rel="noopener noreferrer" className="underline hover:text-[#6f2079]">
-                      Casa Marambaia (46 km)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://reservasgranjabrasil.com.br"
-                      target="_blank" rel="noopener noreferrer" className="underline hover:text-[#6f2079]">
-                      Hotel Granja Brasil Resort (36 km)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.villaitaipava.com.br"
-                      target="_blank" rel="noopener noreferrer" className="underline hover:text-[#6f2079]">
-                      Villa Itaipava (42 km)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.saison.com.br"
-                      target="_blank" rel="noopener noreferrer" className="underline hover:text-[#6f2079]">
-                      Saison Resort & Spa (35 km)
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </section>
+          <section
+  id="hoteis"
+  className="relative min-h-screen w-full bg-[url('/images/hoteis-mobile.png')] md:bg-[url('/images/hoteis-desktop.png')] bg-cover bg-center"
+>
+  <div className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-16">
+    <h2 className={`${cinzel.className} text-3xl md:text-4xl font-bold mb-6 text-center text-black`}>
+      <span className="text-6xl align-top font-bold leading-none mr-1 text-[#6f2079]">H</span>oteis
+    </h2>
+<ul className={`${lora.className} text-[#3b2a1a] text-base sm:text-lg md:text-xl leading-relaxed text-center space-y-6 list-none max-w-full px-8`}>
+      <li>
+        <a
+          href="https://www.airbnb.com.br/rooms/16486376?check_in=2021-09-25&check_out=2021-09-27&guests=1&adults=16&s=13&unique_share_id=b8f83b3e-fe23-4caa-a38f-08eaf0a8af84"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#6f2079]"
+        >
+          Fazenda Passatempo (2 km)
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://pousada-novo-xodo.negocio.site/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#6f2079]"
+        >
+          Pousada Novo Xodó (19 km)
+        </a>
+        <p>Tel.: 24-992236167, Reservas disponíveis pelo Booking também.</p>
+      </li>
+      <li>
+        <a
+          href="https://www.fazendadocedro.com.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#6f2079]"
+        >
+          Hotel Solar Fazenda do Cedro (23 km)
+        </a>
+        <p>Tel.: 24-22233618 / 24-988821378</p>
+        <p>comercial@fazendadocedro.com.br</p>
+      </li>
+      <li>
+        <a
+          href="https://casamarambaia.com.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#6f2079]"
+        >
+          Casa Marambaia (46 km)
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://reservasgranjabrasil.com.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#6f2079]"
+        >
+          Hotel Granja Brasil Resort (36 km)
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.villaitaipava.com.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#6f2079]"
+        >
+          Villa Itaipava (42 km)
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.saison.com.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#6f2079]"
+        >
+          Saison Resort & Spa (35 km)
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
 
             <section
               id="casas_para_locacao"
@@ -238,9 +267,10 @@ export default function Home() {
             >
               <div className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-16">
                 <h2 className={`${cinzel.className} text-3xl md:text-4xl font-bold mb-6 text-center text-black`}>
-                  <span className="text-6xl align-top font-bold leading-none mr-1 text-[#6f2079]">C</span>asas para locação no Condominio Fazenda Santa Monica (11km)
+                  <span className="text-6xl align-top font-bold leading-none mr-1 text-[#6f2079]">C</span>asas no Cond. Fazenda Santa Monica (11km)
                 </h2>
-                <ul className={`${lora.className} text-[#3b2a1a] text-base sm:text-lg md:text-xl leading-relaxed text-left space-y-6 list-none max-w-[18rem] px-8`}>
+                <ul className={`${lora.className} text-[#3b2a1a] text-base sm:text-lg md:text-xl leading-relaxed text-center space-y-6 list-none max-w-full px-8`}>
+
                   <li>
                     <a href="https://www.airbnb.com.br/rooms/19874782?check_in=2020-08-21&check_out=2020-08-23&guests=1&adults=4&s=67&unique_share_id=68bfceee-1c5b-4569-9a28-ed1caf3a65d1"
                       target="_blank" rel="noopener noreferrer" className="underline hover:text-[#6f2079]">
