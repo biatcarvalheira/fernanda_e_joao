@@ -200,7 +200,7 @@ export default function Home() {
             >
               {/* Title at the top */}
               <a
-                href="https://www.seu-site-de-presentes.com" // Replace with your actual URL
+                href="https://www.listapresentesbarbaraebruno.com/" // Replace with your actual URL
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${cinzel.className} absolute top-10 left-1/2 transform -translate-x-1/2 text-[#684778] font-bold text-5xl md:text-7xl hover:text-[#6f2079] transition duration-300`}
