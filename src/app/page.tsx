@@ -2,14 +2,9 @@
 
 import { useState, useRef } from "react";
 import Navbar from "../components/navbar";
-import { Lora, Cinzel } from "next/font/google";
+import {Cinzel } from "next/font/google";
 
 // Fonts
-
-const lora = Lora({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
 
 const cinzel = Cinzel({
   subsets: ["latin"],
