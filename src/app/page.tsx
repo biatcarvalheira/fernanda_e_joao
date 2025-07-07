@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import Navbar from "../components/navbar";
-import {Cinzel } from "next/font/google";
+import { Cinzel } from "next/font/google";
 
 // Fonts
 
@@ -176,14 +176,49 @@ export default function Home() {
             >
               <div className="text-center px-4">
                 <a
-                  href="/hospedagem" // Replace with actual route
+                  href="/hospedagem"
                   className={`${cinzel.className} text-[#6f2079] hover:text-[#3b2a1a] font-bold transition duration-300 text-5xl sm:text-6xl md:text-7xl leading-tight`}
                 >
                   <span className="text-6xl sm:text-7xl md:text-8xl font-bold align-middle leading-none">H</span>ospedagem
                 </a>
               </div>
             </section>
+            {/* Cabelo & Make */}
+            <section
+              id="cabelo-make"
+              className="relative min-h-screen w-full bg-black flex items-center justify-center"
+            >
+              {/* Background Video - Mobile */}
+              <video
+                className="absolute inset-0 w-full h-full object-cover md:hidden"
+                src="/videos/cabelo-make-mobile.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
 
+              {/* Background Video - Desktop */}
+              <video
+                className="absolute inset-0 w-full h-full object-cover hidden md:block"
+                src="/videos/cabelo-make-desktop.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+
+              {/* Content */}
+              <div className="relative z-10 text-center px-4">
+                <a
+                  href="/cabelo-make"
+                  className={`${cinzel.className} text-[#6f2079] hover:text-[#3b2a1a] font-bold transition duration-300 text-5xl sm:text-6xl md:text-7xl leading-tight`}
+                >
+                  <span className="text-6xl sm:text-7xl md:text-8xl font-bold align-middle leading-none">C</span>abelo & Make
+                </a>
+              </div>
+            </section>
+          
 
 
 
