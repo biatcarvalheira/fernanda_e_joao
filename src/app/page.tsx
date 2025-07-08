@@ -182,6 +182,7 @@ export default function Home() {
                   <span className="text-6xl sm:text-7xl md:text-8xl font-bold align-middle leading-none">H</span>ospedagem
                 </a>
               </div>
+
             </section>
             {/* Cabelo & Make */}
             <section
@@ -197,7 +198,6 @@ export default function Home() {
                 loop
                 playsInline
               />
-
               {/* Background Video - Desktop */}
               <video
                 className="absolute inset-0 w-full h-full object-cover hidden md:block"
