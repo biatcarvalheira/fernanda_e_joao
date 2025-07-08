@@ -169,6 +169,22 @@ export default function Home() {
               </div>
             </section>
 
+            {/* Transporte */}
+            <section
+              id="transporte"
+              className="relative min-h-screen w-full bg-[url('/images/transporte-mobile.png')] md:bg-[url('/images/transporte-desktop.png')] bg-cover bg-center flex items-center justify-center"
+            >
+              <div className="text-center px-4">
+                <a
+                  href="/transporte"
+                  className={`${cinzel.className} text-[#6f2079] hover:text-[#3b2a1a] font-bold transition duration-300 text-5xl sm:text-6xl md:text-7xl leading-tight`}
+                >
+                  <span className="text-6xl sm:text-7xl md:text-8xl font-bold align-middle leading-none">T</span>ransporte
+                </a>
+              </div>
+
+            </section>
+
             {/* Hoteis */}
             <section
               id="hoteis"
