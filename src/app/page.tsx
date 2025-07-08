@@ -246,24 +246,25 @@ export default function Home() {
 
 
 
-            {/* Presentes */}
-            <section
-              id="presentes"
-              className="relative min-h-screen w-full bg-[url('/images/presentes-mobile.png')] md:bg-[url('/images/presentes-desktop.png')] bg-cover bg-center flex items-center justify-center px-4 py-16"
-            >
-              {/* Title at the top */}
-              <a
-                href="https://www.listapresentesbarbaraebruno.com/" // Replace with your actual URL
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${cinzel.className} absolute top-10 left-1/2 transform -translate-x-1/2 text-[#684778] font-bold text-5xl md:text-7xl hover:text-[#6f2079] transition duration-300`}
-              >
-                PRESENTES
-              </a>
+       {/* Presentes */}
+<section
+  id="presentes"
+  className="relative min-h-screen w-full bg-[url('/images/presentes-mobile.png')] md:bg-[url('/images/presentes-desktop.png')] bg-cover bg-center flex items-center justify-center px-4 py-16"
+>
+  {/* Title at the top */}
+  <a
+    href="https://www.listapresentesbarbaraebruno.com/" // Replace with your actual URL
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`${cinzel.className} absolute top-16 left-1/2 transform -translate-x-1/2 text-[#684778] font-bold text-5xl md:text-7xl hover:text-[#6f2079] transition duration-300`}
+  >
+    PRESENTES
+  </a>
 
-              {/* Spacer div to maintain layout */}
-              <div className="relative z-10 text-center"></div>
-            </section>
+  {/* Spacer div to maintain layout */}
+  <div className="relative z-10 text-center"></div>
+</section>
+
 
             {/* RSVP Section */}
             <section
