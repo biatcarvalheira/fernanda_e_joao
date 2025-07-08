@@ -169,6 +169,13 @@ export default function Home() {
               </div>
             </section>
 
+            {/* Como Chegar */}
+            <section
+              id="como-chegar"
+              className="relative min-h-screen w-full bg-[url('/images/como-chegar-mobile.png')] md:bg-[url('/images/como-chegar-desktop.png')] bg-cover bg-center flex items-center justify-center"
+            >
+            </section>
+
             {/* Transporte */}
             <section
               id="transporte"
@@ -234,7 +241,7 @@ export default function Home() {
                 </a>
               </div>
             </section>
-          
+
 
 
 
