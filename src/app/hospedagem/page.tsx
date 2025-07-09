@@ -20,7 +20,7 @@ export default function HospedagemPage() {
         {/* Lista 1 */}
         <div>
           <h2 className={`${cinzel.className} text-3xl md:text-4xl font-bold mb-6 text-center text-black`}>
-            <span className="text-6xl align-top font-bold leading-none mr-1 text-[#6f2079]">H</span>oteis
+            <span className="text-6xl align-top font-bold leading-none mr-1 text-[#6f2079]">H</span>otéis
           </h2>
         <ul className={`${lora.className} text-[#3b2a1a] text-base sm:text-lg md:text-xl leading-relaxed text-left space-y-6 list-none max-w-3xl mx-auto px-8`}>
       <li>

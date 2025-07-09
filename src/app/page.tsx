@@ -129,7 +129,7 @@ export default function Home() {
                 <div className={`${cinzel.className} text-[#3b2a1a] font-bold text-lg sm:text-xl md:text-2xl leading-relaxed text-justify`}>
 
                   <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#6f2079] first-letter:leading-[1] first-letter:mr-2 first-letter:tracking-tight ml-[-0.5rem]">
-                    A cerimonia será às 16hrs do dia 15/11/25 na àrea externa da Vinicola Vale dos Desejos.
+                    A cerimônia será às 15:30 do dia 15/11/25 na àrea externa da Vinícola Vale dos Desejos.
                   </p>
                   <p className="mt-6">
                     A festa ocorrerá seguida, às 17:30, no mesmo local.
@@ -163,7 +163,7 @@ export default function Home() {
               <div className="relative z-10relative z-10 w-[80%] sm:w-[70%] md:w-[35%] max-w-md mr-[10%] mt-16 px-6 py-12 w-full md:w-[35%] max-w-md mr-[10%] mt-16 px-6 py-12">
                 <div className={`${cinzel.className} text-[#3b2a1a] font-bold text-lg sm:text-xl md:text-2xl leading-relaxed text-justify`}>
                   <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#6f2079] first-letter:leading-[1] first-letter:mr-2 first-letter:tracking-tight ml-[-0.5rem]">
-                    Traje sugerido: pedimos que usem roupas em branco ou off-white
+                    Traje sugerido: Pedimos que usem roupas brancas ou off-white
                   </p>
                 </div>
               </div>
