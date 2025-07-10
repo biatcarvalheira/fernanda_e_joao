@@ -127,7 +127,6 @@ export default function Home() {
               {/* Text Block - Right Side */}
               <div className="relative z-10 w-full md:w-[35%] max-w-md ml-[15%] px-6 py-12">
                 <div className={`${cinzel.className} text-[#3b2a1a] font-bold text-lg sm:text-xl md:text-2xl leading-relaxed text-justify`}>
-
                   <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#6f2079] first-letter:leading-[1] first-letter:mr-2 first-letter:tracking-tight ml-[-0.5rem]">
                     A cerimônia será às 15:30 do dia 15/11/25 na àrea externa da Vinícola Vale dos Desejos.
                   </p>
