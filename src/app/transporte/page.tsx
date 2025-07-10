@@ -1,5 +1,4 @@
 // app/transporte/page.tsx
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Cinzel, Lora } from "next/font/google";
 
 const cinzel = Cinzel({
