@@ -1,20 +1,13 @@
 "use client";
 
-import { useState } from "react";
-import { Lora } from "next/font/google";
-import { Parisienne } from "next/font/google";
+import { useState, Fragment } from "react";
+import Image from "next/image";
+import { Questrial } from "next/font/google";
 
-// Fonts
-const lora = Lora({
+const questrial = Questrial({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: "400",
 });
-
-const parisienne = Parisienne({
-  subsets: ["latin"],
-  weight: "400", // Parisienne only comes in 400
-});
-
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +15,7 @@ const Navbar = () => {
   const sections = [
     { id: "programa-direita", label: "PROGRAMAÇÃO" },
     { id: "como-chegar", label: "COMO CHEGAR" },
-    { id: "transporte", label: "TRANSPORTE" },
+    { id: "transporte", label: "TRANSPORTE" }, // logo goes right after this
     { id: "hoteis", label: "HOSPEDAGEM" },
     { id: "cabelo-make", label: "CABELO & MAKE" },
     { id: "presentes", label: "PRESENTES" },
@@ -31,43 +24,67 @@ const Navbar = () => {
 
   return (
     <nav
-      style={{ backgroundColor: "#307850" }}
-      className={`${lora.className} fixed top-0 left-0 w-full z-40 p-4 flex items-center text-white`}
+      className={`${questrial.className} fixed top-0 left-0 w-full z-40 bg-[#307850] text-white
+                  flex flex-col items-center`}
     >
-      <h1 className={`${parisienne.className} text-3xl font-bold tracking-widest mr-8`}>
+      {/* Desktop Menu */}
+      <div className="hidden md:flex items-center justify-center gap-8 px-6 text-lg py-4">
+        {sections.map((section) => (
+          <Fragment key={section.id}>
+            <a href={`#${section.id}`} className="hover:underline tracking-wider">
+              {section.label}
+            </a>
 
-        Barbara e Bruno
-      </h1>
-{/* Desktop Menu */}
-<div className="hidden md:flex flex-1 justify-between pl-16 pr-4">
-  {sections.map((section) => (
-    <a key={section.id} href={`#${section.id}`} className="hover:underline tracking-wider">
-      {section.label}
-    </a>
-  ))}
-</div>
+            {section.id === "transporte" && (
+              <Image
+                src="/images/logo.png"
+                alt="Logo"
+                width={250}   // desktop size
+                height={250}
+                priority
+                className="mb-[-6px]"
+              />
+            )}
+          </Fragment>
+        ))}
+      </div>
 
+      {/* Mobile Header (logo replaces burger, smaller size) */}
+      <div className="md:hidden flex items-center justify-between h-16 px-3">
+        <div className="w-6" /> {/* left spacer to keep logo centered */}
 
-      {/* Mobile Hamburger */}
-      <div className="md:hidden ml-auto">
-        <button onClick={() => setIsOpen(!isOpen)}>
-          <span className="text-2xl">☰</span>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Open menu"
+          className="inline-flex items-center justify-center"
+        >
+          <Image
+            src="/images/logo.png"
+            alt="Logo"
+            width={100}    // smaller logo for mobile
+            height={100}
+            priority
+          />
         </button>
+
+        <div className="w-6" /> {/* right spacer */}
       </div>
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="absolute top-16 right-4 bg-white border shadow-md rounded-lg flex flex-col space-y-2 p-4 md:hidden text-black">
-          {sections.map((section) => (
-            <a
-              key={section.id}
-              href={`#${section.id}`}
-              onClick={() => setIsOpen(false)}
-              className="hover:underline"
-            >
-              {section.label}
-            </a>
-          ))}
+        <div className="absolute inset-x-0 top-full mt-2 bg-[#307850] p-3 md:hidden">
+          <div className="flex flex-col divide-y">
+            {sections.map((section) => (
+              <a
+                key={`m-${section.id}`}
+                href={`#${section.id}`}
+                onClick={() => setIsOpen(false)}
+                className="py-3 text-lg text-white text-center"
+              >
+                {section.label}
+              </a>
+            ))}
+          </div>
         </div>
       )}
     </nav>
