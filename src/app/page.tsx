@@ -48,34 +48,46 @@ export default function Home() {
   <div className="relative z-10 flex h-full items-center justify-center px-4 text-center">
     {/* Example hero heading: */}
     {/* <h1 className="text-white text-4xl md:text-6xl font-bold tracking-wide">
-      Barbara & Bruno
+      João & Fernanda
     </h1> */}
   </div>
 </section>
 
-        {/* Section Intro */}
-{/* Section Intro */}
+  {/* Section Intro */}
 <section
   id="intro"
   className="relative min-h-screen flex items-center justify-center bg-neutral-50"
 >
-  {/* Background image */}
+  {/* Background image (mobile vs desktop) */}
   <div className="absolute inset-0">
+    {/* Mobile background */}
     <img
-      src="/images/intro-bg.png" // 👈 replace with your image file
-      alt="Intro Background"
-      className="w-full h-full object-cover"
+      src="/images/intro-bg-mobile.png" // 👈 replace with your mobile image
+      alt="Intro Mobile Background"
+      className="w-full h-full object-cover md:hidden"
+    />
+
+    {/* Desktop background */}
+    <img
+      src="/images/intro-bg-desktop.png" // 👈 replace with your desktop image
+      alt="Intro Desktop Background"
+      className="w-full h-full object-cover hidden md:block"
     />
   </div>
 
   {/* Text content */}
-  <div className="relative z-10 max-w-2xl text-center px-6">
-    <p className="text-neutral-800 text-base sm:text-lg md:text-xl font-semibold leading-relaxed">
-Queridos familiares e amigos, é com imensa alegria que compartilhamos com vocês os preparativos e as informações sobre o nosso casamento.     </p>
-    <p className="mt-6 text-neutral-800 text-base sm:text-lg md:text-xl font-semibold leading-relaxed">
-Tudo está sendo preparado com muito carinho para que este momento seja inesquecível, e será ainda mais especial com a presença de cada um de vocês.     </p>
+  <div className="relative z-10 w-[90%] sm:w-[80%] md:max-w-2xl text-center px-4">
+    <p className="text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed">
+      Queridos familiares e amigos, é com imensa alegria que compartilhamos com vocês os preparativos
+      e as informações sobre o nosso casamento.
+    </p>
+    <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed">
+      Tudo está sendo preparado com muito carinho para que este momento seja inesquecível, e será
+      ainda mais especial com a presença de cada um de vocês.
+    </p>
   </div>
 </section>
+
 
 
 
