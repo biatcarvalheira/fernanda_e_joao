@@ -53,21 +53,32 @@ export default function Home() {
   </div>
 </section>
 
+        {/* Section Intro */}
+{/* Section Intro */}
+<section
+  id="intro"
+  className="relative min-h-screen flex items-center justify-center bg-neutral-50"
+>
+  {/* Background image */}
+  <div className="absolute inset-0">
+    <img
+      src="/images/intro-bg.png" // 👈 replace with your image file
+      alt="Intro Background"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  {/* Text content */}
+  <div className="relative z-10 max-w-2xl text-center px-6">
+    <p className="text-neutral-800 text-base sm:text-lg md:text-xl font-semibold leading-relaxed">
+Queridos familiares e amigos, é com imensa alegria que compartilhamos com vocês os preparativos e as informações sobre o nosso casamento.     </p>
+    <p className="mt-6 text-neutral-800 text-base sm:text-lg md:text-xl font-semibold leading-relaxed">
+Tudo está sendo preparado com muito carinho para que este momento seja inesquecível, e será ainda mais especial com a presença de cada um de vocês.     </p>
+  </div>
+</section>
 
 
-        {/* Section Intro (removed background images & custom fonts) */}
-        <section id="intro" className="relative min-h-screen flex items-center justify-center px-4 py-16 bg-neutral-50">
-          <div className="w-[90%] sm:w-[80%] md:w-[65%] lg:w-[50%]">
-            <div className="text-neutral-800 text-base sm:text-lg md:text-xl leading-relaxed text-justify">
-              <p className="font-semibold first-letter:text-5xl first-letter:font-bold first-letter:text-neutral-700 first-letter:leading-[1] first-letter:mr-3 ml-[-0.25rem]">
-                Queridos amigos e família, estamos nos aproximando do nosso tão sonhado casamento. Esse dia, assim como nosso amor, foi pensado e concebido nos mínimos detalhes.
-              </p>
-              <p className="mt-6 font-semibold">
-                Esperamos que vocês possam sentir a energia mágica da nossa celebração e estejam muito dispostos a comemorar conosco. Aqui, vocês encontrarão tudo o que precisam saber.
-              </p>
-            </div>
-          </div>
-        </section>
+
 
         {/* Programa 1 - Text on Right (no video background) */}
         <section id="programa-direita" className="relative min-h-screen flex items-center justify-center bg-neutral-100">
