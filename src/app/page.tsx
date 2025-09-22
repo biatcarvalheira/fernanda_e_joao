@@ -1,7 +1,6 @@
 "use client";
 
 import Navbar from "../components/navbar";
-import { useMemo } from "react";
 
 export default function Home() {
   
