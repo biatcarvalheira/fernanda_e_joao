@@ -4,22 +4,7 @@ import Navbar from "../components/navbar";
 import { useMemo } from "react";
 
 export default function Home() {
-  // Immediately show the website (we removed the intro/hero videos and gating state)
-  const sections = useMemo(
-    () => [
-      { id: "hero", title: "Bem-vindos", bg: "bg-neutral-100" },
-      { id: "intro", title: "Introdução", bg: "bg-neutral-50" },
-      { id: "programa-direita", title: "Cerimônia & Festa", bg: "bg-neutral-100" },
-      { id: "programa-esquerda", title: "Traje", bg: "bg-neutral-50" },
-      { id: "como-chegar", title: "Como chegar", bg: "bg-neutral-100" },
-      { id: "transporte", title: "Transporte", bg: "bg-neutral-50" },
-      { id: "hoteis", title: "Hospedagem", bg: "bg-neutral-100" },
-      { id: "cabelo-make", title: "Cabelo & Make", bg: "bg-neutral-50" },
-      { id: "presentes", title: "Presentes", bg: "bg-neutral-100" },
-      { id: "rsvp-intro", title: "RSVP", bg: "bg-neutral-50" },
-    ],
-    []
-  );
+  
 
   return (
     <div className="min-h-screen w-full">
