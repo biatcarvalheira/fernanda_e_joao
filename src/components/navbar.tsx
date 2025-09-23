@@ -13,7 +13,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const sections = [
-    { id: "programa-direita", label: "PROGRAMAÇÃO" },
+    { id: "programacao", label: "PROGRAMAÇÃO" },
     { id: "como-chegar", label: "COMO CHEGAR" },
     { id: "transporte", label: "TRANSPORTE" }, // logo goes right after this
     { id: "hoteis", label: "HOSPEDAGEM" },

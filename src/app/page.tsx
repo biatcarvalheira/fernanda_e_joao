@@ -98,35 +98,41 @@ export default function Home() {
 
 
 
-        {/* Programa 1 - Text on Right (no video background) */}
-        <section id="programa-direita" className="relative min-h-screen flex items-center justify-center bg-neutral-100">
-          <div className="relative z-10 w-full md:w-[35%] max-w-md ml-0 md:ml-[15%] px-6 py-12">
-            <div className="text-neutral-800 font-semibold text-lg sm:text-xl md:text-2xl leading-relaxed text-justify">
-              <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-neutral-700 first-letter:leading-[1] first-letter:mr-2 ml-[-0.5rem]">
-                A cerimônia será às 15:30 do dia 11/15/2025 na área externa da Vinícola Vale dos Desejos.
-              </p>
-              <p className="mt-6">A festa ocorrerá em seguida, às 17:30, no mesmo local.</p>
-            </div>
-          </div>
-        </section>
+        {/* Programacao */}
+        <section
+  id="programacao"
+  className="relative min-h-screen flex items-center justify-center 
+             bg-[url('/images/programacao-bg-mobile.png')] md:bg-[url('/images/programacao-bg-desktop.png')]
+             bg-cover bg-center bg-no-repeat"
+>
+  {/* TEXT BOX */}
+  <div
+    className="
+      relative z-10 text-center
+      w-[90%] sm:w-[80%] md:max-w-2xl
+      px-4
+      /* XS (≤400px): make it much smaller and taller */
+      max-[400px]:max-w-[160px]
+      max-[400px]:min-h-[260px]
+      max-[400px]:px-2
+      max-[400px]:py-4
+      max-[400px]:flex max-[400px]:flex-col max-[400px]:justify-center
+      /* better wrapping on tiny widths */
+      [overflow-wrap:anywhere] [word-break:break-word] [hyphens:auto]
+    "
+  >
+    <p className="text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed
+                  max-[400px]:leading-snug">
+   A cerimônia será às 14h30 do dia 20/04/2026 na Represa de Jurumirim Avaré, Anexo Golf.
 
-        {/* Programa 2 - Text on Left (no video background) */}
-        <section id="programa-esquerda" className="relative min-h-screen flex items-center justify-center bg-neutral-50">
-          <div className="relative z-10 w-[80%] sm:w-[70%] md:w-[35%] max-w-md mr-0 md:mr-[10%] mt-16 px-6 py-12">
-            <div className="text-neutral-800 font-semibold text-lg sm:text-xl md:text-2xl leading-relaxed text-justify">
-              <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-neutral-700 first-letter:leading-[1] first-letter:mr-2 ml-[-0.5rem]">
-                Traje sugerido: pedimos que usem roupas brancas ou off‑white.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Como Chegar (no background images) */}
-        <section id="como-chegar" className="relative min-h-screen w-full bg-neutral-100 flex items-center justify-center">
-          <div className="text-center px-4">
-            <h2 className="text-3xl md:text-5xl font-bold text-neutral-800">Como chegar</h2>
-          </div>
-        </section>
+    </p>
+    <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed
+                  max-[400px]:mt-3 max-[400px]:leading-snug">
+   A festa ocorrerá em seguida, após a cerimônia, no mesmo local.
+Traje: social.
+    </p>
+  </div>
+</section>
 
         {/* Transporte (link kept; no images) */}
         <section id="transporte" className="relative min-h-screen w-full bg-neutral-50 flex items-center justify-center">
