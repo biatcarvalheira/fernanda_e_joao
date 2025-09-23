@@ -53,40 +53,46 @@ export default function Home() {
   </div>
 </section>
 
-  {/* Section Intro */}
+
+{/* Section Intro */}
 <section
   id="intro"
-  className="relative min-h-screen flex items-center justify-center bg-neutral-50"
+  className="relative min-h-screen flex items-center justify-center 
+             bg-[url('/images/intro-bg-mobile.png')] md:bg-[url('/images/intro-bg-desktop.png')]
+             bg-cover bg-center bg-no-repeat"
 >
-  {/* Background image (mobile vs desktop) */}
-  <div className="absolute inset-0">
-    {/* Mobile background */}
-    <img
-      src="/images/intro-bg-mobile.png" // 👈 replace with your mobile image
-      alt="Intro Mobile Background"
-      className="w-full h-full object-cover md:hidden"
-    />
-
-    {/* Desktop background */}
-    <img
-      src="/images/intro-bg-desktop.png" // 👈 replace with your desktop image
-      alt="Intro Desktop Background"
-      className="w-full h-full object-cover hidden md:block"
-    />
-  </div>
-
-  {/* Text content */}
-  <div className="relative z-10 w-[90%] sm:w-[80%] md:max-w-2xl text-center px-4">
-    <p className="text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed">
+  {/* TEXT BOX */}
+  <div
+    className="
+      relative z-10 text-center
+      w-[90%] sm:w-[80%] md:max-w-2xl
+      px-4
+      /* XS (≤400px): make it much smaller and taller */
+      max-[400px]:max-w-[160px]
+      max-[400px]:min-h-[260px]
+      max-[400px]:px-2
+      max-[400px]:py-4
+      max-[400px]:flex max-[400px]:flex-col max-[400px]:justify-center
+      /* better wrapping on tiny widths */
+      [overflow-wrap:anywhere] [word-break:break-word] [hyphens:auto]
+    "
+  >
+    <p className="text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed
+                  max-[400px]:leading-snug">
       Queridos familiares e amigos, é com imensa alegria que compartilhamos com vocês os preparativos
       e as informações sobre o nosso casamento.
     </p>
-    <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed">
+    <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed
+                  max-[400px]:mt-3 max-[400px]:leading-snug">
       Tudo está sendo preparado com muito carinho para que este momento seja inesquecível, e será
       ainda mais especial com a presença de cada um de vocês.
     </p>
   </div>
 </section>
+
+
+
+
 
 
 
