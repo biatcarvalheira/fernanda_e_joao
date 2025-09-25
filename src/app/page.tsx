@@ -134,6 +134,71 @@ Traje: social.
   </div>
 </section>
 
+ {/* Como chegar */}
+<section
+  id="como-chegar"
+  className="relative min-h-screen flex items-center justify-center overflow-hidden"
+>
+  {/* Background Video – Mobile */}
+  <video
+    className="absolute inset-0 w-full h-full object-cover md:hidden"
+    src="/videos/como-chegar-mobile.mp4"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+
+  {/* Background Video – Desktop */}
+  <video
+    className="absolute inset-0 w-full h-full object-cover hidden md:block"
+    src="/videos/como-chegar-desktop.mp4"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+
+  {/* Text Box */}
+  <div
+    className="
+      relative z-10 text-center
+      w-[90%] sm:w-[80%] md:max-w-2xl
+      px-4
+      md:-translate-y-32   /* 👈 only move up on desktop */
+      max-[400px]:max-w-[160px]
+      max-[400px]:min-h-[260px]
+      max-[400px]:px-2
+      max-[400px]:py-4
+      max-[400px]:flex max-[400px]:flex-col max-[400px]:justify-center
+      [overflow-wrap:anywhere] [word-break:break-word] [hyphens:auto]
+    "
+  >
+    <p className="text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed">
+      A cerimônia e a festa acontecerão na Represa de Jurumirim, em Avaré, no espaço Anexo Golf.
+    </p>
+
+    <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed">
+      📍 Endereço:  
+      Represa de Jurumirim Avaré  
+      Km 270, João Mellão  
+      CEP 18704-201
+    </p>
+
+    <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed">
+      🚗 Para quem vem de São Paulo: o trajeto leva cerca de 3 horas de carro pela Rodovia Castelo Branco.
+    </p>
+
+    <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed">
+      🚌 Para quem vem de outras cidades: há opções de ônibus até Avaré; de lá, é possível pegar um táxi ou transporte por aplicativo até o local.
+    </p>
+  </div>
+</section>
+
+
+
+
+
         {/* Transporte (link kept; no images) */}
         <section id="transporte" className="relative min-h-screen w-full bg-neutral-50 flex items-center justify-center">
           <div className="text-center px-4">
