@@ -337,7 +337,7 @@ export default function Home() {
 
   {/* Button image in the center */}
   <a
-    href="https://forms.gle/SEU_LINK_AQUI"   // 👈 replace with your Google Forms link
+    href="https://docs.google.com/forms/d/e/1FAIpQLSeARpmW7bN3zqU3wFRnJ-QCK3IhTIA6PKQBafX2hSXsJYnfHQ/viewform?usp=header"   // 👈 replace with your Google Forms link
     target="_blank"
     rel="noopener noreferrer"
     className="relative z-10 group"
