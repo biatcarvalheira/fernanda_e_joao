@@ -16,7 +16,7 @@ const Navbar = () => {
     { id: "programacao", label: "PROGRAMAÇÃO" },
     { id: "como-chegar", label: "COMO CHEGAR" },
     { id: "transporte", label: "TRANSPORTE" }, // logo goes right after this
-    { id: "hoteis", label: "HOSPEDAGEM" },
+    { id: "hospedagem", label: "HOSPEDAGEM" },
     { id: "cabelo-make", label: "CABELO & MAKE" },
     { id: "presentes", label: "PRESENTES" },
     { id: "rsvp", label: "RSVP" },
