@@ -54,40 +54,37 @@ export default function Home() {
         </section>
 
         {/* Section Intro */}
-        <section
-          id="intro"
-          className="relative min-h-screen flex items-center justify-center 
+       <section
+  id="intro"
+  className="relative min-h-screen flex items-center justify-center 
              bg-[url('/images/intro-bg-mobile.png')] md:bg-[url('/images/intro-bg-desktop.png')]
              bg-cover bg-center bg-no-repeat"
-        >
-          {/* TEXT BOX */}
-          <div
-            className="
+>
+  {/* TEXT BOX */}
+  <div
+    className="
       relative z-10 text-center
       w-[90%] sm:w-[80%] md:max-w-2xl
       px-4
-      /* XS (≤400px): make it much smaller and taller */
-      max-[400px]:max-w-[160px]
-      max-[400px]:min-h-[260px]
-      max-[400px]:px-2
+      max-[400px]:w-[85%]              /* 👈 slightly wider on very small screens */
+      max-[400px]:max-w-none
+      max-[400px]:px-3
       max-[400px]:py-4
       max-[400px]:flex max-[400px]:flex-col max-[400px]:justify-center
-      /* better wrapping on tiny widths */
-      [overflow-wrap:anywhere] [word-break:break-word] [hyphens:auto]
+      [word-break:normal] [overflow-wrap:normal] /* 👈 prevents over-aggressive breaks */
     "
-          >
-            <p className="text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed
-                  max-[400px]:leading-snug">
-              Queridos familiares e amigos, é com imensa alegria que compartilhamos com vocês os preparativos
-              e as informações sobre o nosso casamento.
-            </p>
-            <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed
-                  max-[400px]:mt-3 max-[400px]:leading-snug">
-              Tudo está sendo preparado com muito carinho para que este momento seja inesquecível, e será
-              ainda mais especial com a presença de cada um de vocês.
-            </p>
-          </div>
-        </section>
+  >
+    <p className="text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed sm:leading-loose max-[400px]:leading-normal">
+      Queridos familiares e amigos, é com imensa alegria que compartilhamos com vocês os preparativos
+      e as informações sobre o nosso casamento.
+    </p>
+    <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed sm:leading-loose max-[400px]:leading-normal">
+      Tudo está sendo preparado com muito carinho para que este momento seja inesquecível, e será
+      ainda mais especial com a presença de cada um de vocês.
+    </p>
+  </div>
+</section>
+
 
         {/* Programacao */}
         <section
@@ -112,8 +109,13 @@ export default function Home() {
       [overflow-wrap:anywhere] [word-break:break-word] [hyphens:auto]
     "
           >
-            <p className="text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed
+              <p className="text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed
                   max-[400px]:leading-snug">
+              O pre-wedding será no dia 18/04/2026, horário e local a definir.
+
+            </p>
+            <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed
+                  max-[400px]:mt-3 max-[400px]:leading-snug">
               A cerimônia será às 14h30 do dia 20/04/2026 na Represa de Jurumirim Avaré, Anexo Golf.
 
             </p>
@@ -260,29 +262,29 @@ export default function Home() {
   Hospedagem
   </h2>
 
-    <ul className="text-sm sm:text-lg md:text-xl font-semibold leading-relaxed space-y-4 list-disc list-inside">
+  <ul className="text-sm sm:text-lg md:text-xl font-semibold leading-relaxed space-y-4 list-disc list-inside">
+  <li>
+    <span className="font-bold">Eco Blue Resort</span>
+    <ul className="list-disc list-inside pl-5 mt-2 space-y-2">
       <li>
-        <span className="font-bold">Eco Blue Resort</span>
-        <ul className="list-disc list-inside pl-5 mt-2 space-y-2">
-          <li>
-            <span className="font-semibold">
-              Rodovia João Mellão, km 273 - 5 - Represa Jurumirim, Avaré - SP, 19704-201
-            </span>
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        <span className="font-bold">Jurumirim Imóveis</span>
-        <ul className="list-disc list-inside pl-5 mt-2 space-y-2">
-          <li>
-            <span className="font-semibold">
-              Aluguel de casas na represa: (14) 3512-0967
-            </span>
-          </li>
-        </ul>
+        <span className="font-semibold text-xs sm:text-sm md:text-base">
+          Rodovia João Mellão, km 273 - 5 - Represa Jurumirim, Avaré - SP, 19704-201
+        </span>
       </li>
     </ul>
+  </li>
+
+  <li>
+    <span className="font-bold">Jurumirim Imóveis</span>
+    <ul className="list-disc list-inside pl-5 mt-2 space-y-2">
+      <li>
+        <span className="font-semibold text-xs sm:text-sm md:text-base">
+          Aluguel de casas na represa: (14) 3512-0967
+        </span>
+      </li>
+    </ul>
+  </li>
+</ul>
   </div>
 </section>
 
