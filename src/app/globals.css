@@ -33,6 +33,10 @@ html {
   animation: fadeOut 2s ease forwards;
 }
 
+.font-style-script {
+  font-family: var(--font-style-script);
+}
+
 @keyframes fadeOut {
   from {
     opacity: 1;
@@ -42,12 +46,5 @@ html {
   }
 }
 
-.dropcap p::first-letter {
-  font-size: 3.5rem;
-  float: left;
-  line-height: 1;
-  padding-right: 0.3rem;
-  font-weight: 400;
-  color: #4b2e2e;
-}
+
 
