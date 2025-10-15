@@ -139,7 +139,7 @@ export default function Home() {
               <div className="text-[#1c5134] text-[0.8rem] sm:text-sm md:text-base font-medium leading-relaxed mt-3 space-y-1">
                 <p>Local: A definir</p>
                 <p>Horário: A definir</p>
-                <p>Traje: Social</p>
+                <p>Traje: Roupas leves e de banho</p>
               </div>
 
             </div>
@@ -166,9 +166,9 @@ export default function Home() {
                 Casamento
               </p>
               <div className="text-[#1c5134] text-[0.8rem] sm:text-sm md:text-base font-medium leading-relaxed mt-3 space-y-1">
-                <p>Local: A definir</p>
-                <p>Horário: A definir</p>
-                <p>Traje: Roupas leves e de banho</p>
+                <p>Local: Anexo Golf Avaré </p>
+                <p>Horário: 15h</p>
+                <p>Traje: Social</p>
               </div>
             </div>
           </div>
@@ -350,7 +350,7 @@ export default function Home() {
         </section>
 
         {/* Hoteis (link kept; no images) */}
-   <section
+<section
   id="hospedagem"
   className="
     relative min-h-screen flex items-center 
@@ -379,45 +379,44 @@ export default function Home() {
   {/* Text box */}
   <div
     className="
-      relative z-10 text-left
+      relative z-10 text-center
       w-[90%] sm:w-[80%] md:max-w-lg
       px-4
       md:ml-[15%] text-[#1c5134]
     "
   >
-    <h2 className="font-style-script text-[#1c5134] text-2xl sm:text-3xl md:text-4xl italic tracking-wide mb-6">
+    {/* Centered heading */}
+    <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-8">
       Hospedagem
     </h2>
 
+    {/* Centered text */}
     <div className="text-xs sm:text-sm md:text-base font-medium leading-relaxed space-y-6">
       <div>
-        <span className="font-bold">Eco Blue Resort</span>
-        <div className="mt-2">
-          <span className="font-medium text-xs sm:text-sm md:text-base">
-            Rodovia João Mellão, km 273 - 5 - Represa Jurumirim, Avaré - SP, 19704-201
-          </span>
-        </div>
-      </div>
-        <div>
-        <span className="font-bold">Estância Avaré Hotel</span>
-        <div className="mt-2">
-          <span className="font-medium text-xs sm:text-sm md:text-base">
-            Av. Pref. Paulo Novaes, 2 - Jardim Botanico, Avaré - SP
-          </span>
-        </div>
+        <p className="font-bold">Eco Blue Resort</p>
+        <p className="mt-2 text-xs sm:text-sm md:text-base">
+          Rodovia João Mellão, km 273 - 5 - Represa Jurumirim, Avaré - SP, 19704-201
+        </p>
       </div>
 
       <div>
-        <span className="font-bold">Jurumirim Imóveis</span>
-        <div className="mt-2">
-          <span className="font-medium text-xs sm:text-sm md:text-base">
-            Aluguel de casas na represa: (14) 3512-0967
-          </span>
-        </div>
+        <p className="font-bold">Estância Avaré Hotel</p>
+        <p className="mt-2 text-xs sm:text-sm md:text-base">
+          Av. Pref. Paulo Novaes, 2 - Jardim Botânico, Avaré - SP
+        </p>
+      </div>
+
+      <div>
+        <p className="font-bold">Jurumirim Imóveis</p>
+        <p className="mt-2 text-xs sm:text-sm md:text-base">
+          Aluguel de casas na represa: (14) 3512-0967
+        </p>
       </div>
     </div>
   </div>
 </section>
+
+
 
 
 
