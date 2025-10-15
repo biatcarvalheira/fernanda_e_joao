@@ -15,7 +15,7 @@ const Navbar = () => {
   const sections = [
     { id: "programacao", label: "PROGRAMAÇÃO" },
     { id: "como-chegar", label: "COMO CHEGAR" },
-    { id: "transporte", label: "TRANSPORTE" }, // logo goes right after this
+    { id: "dicas", label: "DICAS" }, // logo goes right after this
     { id: "hospedagem", label: "HOSPEDAGEM" },
     { id: "cabelo-make", label: "CABELO & MAKE" },
     { id: "presentes", label: "PRESENTES" },
@@ -35,7 +35,7 @@ const Navbar = () => {
               {section.label}
             </a>
 
-            {section.id === "transporte" && (
+            {section.id === "dicas" && (
               <Image
                 src="/images/logo.png"
                 alt="Logo"

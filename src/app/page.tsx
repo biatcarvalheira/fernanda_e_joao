@@ -55,15 +55,15 @@ export default function Home() {
         </section>
 
         {/* Section Intro */}
-      <section
-  id="intro"
-  className="relative min-h-screen flex items-center justify-center 
+        <section
+          id="intro"
+          className="relative min-h-screen flex items-center justify-center 
              bg-[url('/images/intro-bg-mobile.png')] md:bg-[url('/images/intro-bg-desktop.png')]
              bg-cover bg-center bg-no-repeat"
->
-  {/* TEXT BOX */}
-  <div
-    className="
+        >
+          {/* TEXT BOX */}
+          <div
+            className="
       relative z-10 text-center
       w-[90%] sm:w-[80%] md:max-w-2xl
       px-4
@@ -74,28 +74,28 @@ export default function Home() {
       max-[400px]:flex max-[400px]:flex-col max-[400px]:justify-center
       [word-break:normal] [overflow-wrap:normal]
     "
-  >
-    <p className="text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed sm:leading-loose max-[400px]:leading-normal">
-      Queridos familiares e amigos, é com imensa alegria que compartilhamos com vocês os preparativos
-      e as informações sobre o nosso casamento.
-    </p>
+          >
+            <p className="text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed sm:leading-loose max-[400px]:leading-normal">
+              Queridos familiares e amigos, é com imensa alegria que compartilhamos com vocês os preparativos
+              e as informações sobre o nosso casamento.
+            </p>
 
-    <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed sm:leading-loose max-[400px]:leading-normal">
-      Tudo está sendo preparado com muito carinho para que este momento seja inesquecível, e será
-      ainda mais especial com a presença de cada um de vocês.
-    </p>
+            <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed sm:leading-loose max-[400px]:leading-normal">
+              Tudo está sendo preparado com muito carinho para que este momento seja inesquecível, e será
+              ainda mais especial com a presença de cada um de vocês.
+            </p>
 
- <p className="mt-2 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed sm:leading-loose max-[400px]:leading-normal">
-  Faltam
-</p>
+            <p className="mt-2 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed sm:leading-loose max-[400px]:leading-normal">
+              Faltam
+            </p>
 
-    {/* 👉 Countdown goes here */}
-    <div className="mt-8">
-      <Countdown target="2026-04-20T14:30:00-03:00" />
-      {/* Adjust the date/time if needed; this is 20/04/2026 14:30 in São Paulo time */}
-    </div>
-  </div>
-</section>
+            {/* 👉 Countdown goes here */}
+            <div className="mt-8">
+              <Countdown target="2026-04-20T14:30:00-03:00" />
+              {/* Adjust the date/time if needed; this is 20/04/2026 14:30 in São Paulo time */}
+            </div>
+          </div>
+        </section>
 
 
         {/* Programacao */}
@@ -118,6 +118,9 @@ export default function Home() {
       max-[400px]:flex max-[400px]:flex-col max-[400px]:justify-center
     "
           >
+            <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-6">
+              Programação
+            </h2>
             {/* 1️⃣ Pré-Wedding */}
             <div className="mb-8">
               <p className="text-[#1c5134] text-[0.7rem] sm:text-xs md:text-sm font-bold">
@@ -164,15 +167,7 @@ export default function Home() {
           </div>
         </section>
 
-
-
-
-
-
-
-
-
-        {/* Como chegar */}
+        {/* Como chegar*/}
         <section
           id="como-chegar"
           className="relative min-h-screen flex items-center justify-center overflow-hidden"
@@ -200,44 +195,89 @@ export default function Home() {
           {/* Text Box */}
           <div
             className="
-      relative z-10 text-center
-      w-[90%] sm:w-[80%] md:max-w-2xl
-      px-4
-      md:-translate-y-32   /* 👈 only move up on desktop */
-      max-[400px]:max-w-[160px]
-      max-[400px]:min-h-[260px]
-      max-[400px]:px-2
-      max-[400px]:py-4
-      max-[400px]:flex max-[400px]:flex-col max-[400px]:justify-center
-      [overflow-wrap:anywhere] [word-break:break-word] [hyphens:auto]
-    "
+                  relative z-10 text-center
+                  w-[90%] sm:w-[80%] md:max-w-2xl
+                  px-4
+                  md:-translate-y-32   /* 👈 only move up on desktop */
+                  max-[400px]:max-w-[160px]
+                  max-[400px]:min-h-[260px]
+                  max-[400px]:px-2
+                  max-[400px]:py-4
+                  max-[400px]:flex max-[400px]:flex-col max-[400px]:justify-center
+                  [overflow-wrap:anywhere] [word-break:break-word] [hyphens:auto]
+                "
           >
-            <p className="text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed">
-              A cerimônia e a festa acontecerão na Represa de Jurumirim, em Avaré, no espaço Anexo Golf.
+
+            <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-6">
+              Como Chegar
+            </h2>
+            <p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
+              Em Avaré
             </p>
 
-            <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed">
-              📍 Endereço:
-              Represa de Jurumirim Avaré
-              Km 270, João Mellão
-              CEP 18704-201
+            <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed">
+              Para quem vem de São Paulo: o trajeto leva cerca de 3 horas de carro pela Rodovia Castelo Branco.
             </p>
 
-            <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed">
-              🚗 Para quem vem de São Paulo: o trajeto leva cerca de 3 horas de carro pela Rodovia Castelo Branco.
+            <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed">
+              Para quem vem de outras cidades: há opções de ônibus até Avaré; de lá, é possível pegar um táxi ou transporte por aplicativo até o local.
             </p>
 
-            <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed">
-              🚌 Para quem vem de outras cidades: há opções de ônibus até Avaré; de lá, é possível pegar um táxi ou transporte por aplicativo até o local.
+
+
+            <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-bold leading-relaxed">
+              Parada obrigatória
             </p>
+
+            <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-2 space-y-2 mb-6">
+              <li>
+                <span className="font-semibold">Ida:</span> Parmegiana no Camponesa
+                <br />
+                <span className="italic">(Rod. Pres. Castello Branco, Km 198)</span>
+              </li>
+              <li>
+                <span className="font-semibold">Volta:</span> Sanduíche de Parma na Quinta do Marquês
+                <br />
+                <span className="italic">(Rod. Pres. Castello Branco, Km 57)</span>
+              </li>
+            </ul>
+            <p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
+              No Casamento
+            </p>
+            <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-2 space-y-2 mb-6">
+              <li>
+                <span className="font-semibold">Ponto de saída de vans:</span>
+                <br />
+                <a
+                  href="https://maps.google.com/?q=Hotel+Eco+Blue+Avaré" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-[#245a40] transition"
+                >
+                  Hotel Eco Blue
+                </a>
+                <br />
+                <a
+                  href="https://maps.google.com/?q=Estância+Avaré+Hotel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-[#245a40] transition"
+                >
+                  Estância Avaré Hotel
+                </a>
+              </li>
+
+            </ul>
+
+
           </div>
         </section>
 
-        {/* Transporte (link kept; no images) */}
+        {/* Dicas (link kept; no images) */}
         <section
-          id="transporte"
+          id="dicas"
           className="relative min-h-screen flex items-center justify-center 
-             bg-[url('/images/transporte-bg-mobile.png')] md:bg-[url('/images/transporte-bg-desktop.png')]
+             bg-[url('/images/dicas-bg-mobile.png')] md:bg-[url('/images/dicas-bg-desktop.png')]
              bg-cover bg-center bg-no-repeat"
         >
           {/* TEXT BOX */}
@@ -248,90 +288,132 @@ export default function Home() {
       px-4 text-[#1c5134]
     "
           >
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6">Transporte</h2>
+            <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-6">
+              Dicas
+            </h2>
 
-            <ul className="text-sm sm:text-lg md:text-xl font-semibold leading-relaxed space-y-4 list-disc list-inside text-left">
+            <p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
+              Restaurantes na cidade
+            </p>
+          <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-4 mb-10 space-y-4">
+  <li>
+    <span className="font-semibold">Manacá Café</span> | (14) 99673-1025
+    <br />
+    <span className="italic">Av. Prefeito Paulo Novaes, 1025, Avaré/SP</span>
+  </li>
+
+  <li>
+    <span className="font-semibold">Empório Pé de Café</span>
+    <br />
+    <span className="italic">Av. Ouro Verde, 318, Avaré/SP</span>
+  </li>
+
+  <li>
+    <span className="font-semibold">Pizzaria Paulistana</span> | (14) 3732-5318
+    <br />
+    <span className="italic">R. Pernambuco, 777, Avaré/SP</span>
+  </li>
+
+  <li>
+    <span className="font-semibold">Bruna Gauss</span> | (14) 3731-3168
+    <br />
+    <span className="italic">R. Minas Gerais, 1324, Avaré/SP</span>
+  </li>
+</ul>
+
+<p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
+  Restaurantes na represa
+</p>
+
+            <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-4 space-y-4">
               <li>
-                <span className="font-bold">Vans para o casamento</span>
-                <ul className="list-disc list-inside pl-5 mt-2 space-y-2">
-                  <li>
-                    <span className="font-semibold">Ponto de saída:</span> Hotel Eco Blue
-                    📍 Rodovia João Mellão, km 273 - 5 - Represa Jurimirim, Avaré - SP, 19704-201
-                  </li>
-                  <li>
-                    <span className="font-semibold">Horários:</span> _(insira os horários aqui)_
-                  </li>
-                </ul>
+                <span className="font-semibold">Restaurante Toa Toa </span> | (14) 99652-2591
+                <br />
+                <span className="italic">Rua Jurumirim - Ponta dos Cambarás</span>
+              </li>
+              <li>
+                <span className="font-semibold">Espaço ISA </span> | (11) 98674- 5976
+                <br />
+                <span className="italic">Rodovia João Mellão, SP-255</span>
               </li>
             </ul>
+
+
           </div>
         </section>
 
         {/* Hoteis (link kept; no images) */}
-        <section
-          id="hospedagem"
-          className="
+   <section
+  id="hospedagem"
+  className="
     relative min-h-screen flex items-center 
-    justify-center md:justify-center   /* keep center as baseline */
+    justify-center md:justify-center
     overflow-hidden
   "
-        >
-          {/* Background image for mobile */}
-          <div className="absolute inset-0 md:hidden">
-            <img
-              src="/images/hospedagem-mobile.png"
-              alt="Hospedagem Mobile Background"
-              className="w-full h-full object-cover"
-            />
-          </div>
+>
+  {/* Background image for mobile */}
+  <div className="absolute inset-0 md:hidden">
+    <img
+      src="/images/hospedagem-mobile.png"
+      alt="Hospedagem Mobile Background"
+      className="w-full h-full object-cover"
+    />
+  </div>
 
-          {/* Background image for desktop */}
-          <div className="absolute inset-0 hidden md:block">
-            <img
-              src="/images/hospedagem-desktop.png"
-              alt="Hospedagem Desktop Background"
-              className="w-full h-full object-cover"
-            />
-          </div>
+  {/* Background image for desktop */}
+  <div className="absolute inset-0 hidden md:block">
+    <img
+      src="/images/hospedagem-desktop.png"
+      alt="Hospedagem Desktop Background"
+      className="w-full h-full object-cover"
+    />
+  </div>
 
-          {/* Text box */}
-          <div
-            className="
+  {/* Text box */}
+  <div
+    className="
       relative z-10 text-left
       w-[90%] sm:w-[80%] md:max-w-lg
       px-4
-      md:ml-[15%] text-[#1c5134]  /* 👈 shifts block slightly right on desktop */
+      md:ml-[15%] text-[#1c5134]
     "
-          >
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-center md:text-left">
-              Hospedagem
-            </h2>
+  >
+    <h2 className="font-style-script text-[#1c5134] text-2xl sm:text-3xl md:text-4xl italic tracking-wide mb-6">
+      Hospedagem
+    </h2>
 
-            <ul className="text-sm sm:text-lg md:text-xl font-semibold leading-relaxed space-y-4 list-disc list-inside">
-              <li>
-                <span className="font-bold">Eco Blue Resort</span>
-                <ul className="list-disc list-inside pl-5 mt-2 space-y-2">
-                  <li>
-                    <span className="font-semibold text-xs sm:text-sm md:text-base">
-                      Rodovia João Mellão, km 273 - 5 - Represa Jurumirim, Avaré - SP, 19704-201
-                    </span>
-                  </li>
-                </ul>
-              </li>
+    <div className="text-xs sm:text-sm md:text-base font-medium leading-relaxed space-y-6">
+      <div>
+        <span className="font-bold">Eco Blue Resort</span>
+        <div className="mt-2">
+          <span className="font-medium text-xs sm:text-sm md:text-base">
+            Rodovia João Mellão, km 273 - 5 - Represa Jurumirim, Avaré - SP, 19704-201
+          </span>
+        </div>
+      </div>
+        <div>
+        <span className="font-bold">Estância Avaré Hotel</span>
+        <div className="mt-2">
+          <span className="font-medium text-xs sm:text-sm md:text-base">
+            Av. Pref. Paulo Novaes, 2 - Jardim Botanico, Avaré - SP
 
-              <li>
-                <span className="font-bold">Jurumirim Imóveis</span>
-                <ul className="list-disc list-inside pl-5 mt-2 space-y-2">
-                  <li>
-                    <span className="font-semibold text-xs sm:text-sm md:text-base">
-                      Aluguel de casas na represa: (14) 3512-0967
-                    </span>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </section>
+          </span>
+        </div>
+      </div>
+
+      <div>
+        <span className="font-bold">Jurumirim Imóveis</span>
+        <div className="mt-2">
+          <span className="font-medium text-xs sm:text-sm md:text-base">
+            Aluguel de casas na represa: (14) 3512-0967
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
 
