@@ -85,9 +85,16 @@ export default function Home() {
               ainda mais especial com a presença de cada um de vocês.
             </p>
 
-            <p className="mt-2 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed sm:leading-loose max-[400px]:leading-normal">
-              Faltam
-            </p>
+           <p
+  className="font-style-script mt-2 text-[#1c5134] text-3xl sm:text-4xl md:text-5xl leading-snug tracking-wide"
+  style={{
+    textShadow:
+      "0.5px 0.5px 0 #1c5134, -0.5px -0.5px 0 #1c5134, 0.5px -0.5px 0 #1c5134, -0.5px 0.5px 0 #1c5134",
+  }}
+>
+  Faltam
+</p>
+
 
             {/* 👉 Countdown goes here */}
             <div className="mt-8">
@@ -132,7 +139,7 @@ export default function Home() {
               <div className="text-[#1c5134] text-[0.8rem] sm:text-sm md:text-base font-medium leading-relaxed mt-3 space-y-1">
                 <p>Local: A definir</p>
                 <p>Horário: A definir</p>
-                <p>Traje: Roupas leves e de banho</p>
+                <p>Traje: Social</p>
               </div>
 
             </div>
@@ -396,7 +403,6 @@ export default function Home() {
         <div className="mt-2">
           <span className="font-medium text-xs sm:text-sm md:text-base">
             Av. Pref. Paulo Novaes, 2 - Jardim Botanico, Avaré - SP
-
           </span>
         </div>
       </div>
