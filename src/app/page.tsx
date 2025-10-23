@@ -277,9 +277,6 @@ export default function Home() {
     </ul>
   </div>
 </section>
-
-
-
         {/* Dicas (link kept; no images) */}
         <section
           id="dicas"
