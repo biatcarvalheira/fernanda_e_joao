@@ -175,110 +175,110 @@ export default function Home() {
         </section>
 
         {/* Como chegar*/}
-        <section
-          id="como-chegar"
-          className="relative min-h-screen flex items-center justify-center overflow-hidden"
+   
+<section
+  id="como-chegar"
+  className="relative min-h-screen flex items-center justify-center overflow-hidden md:overflow-visible md:pt-16"
+>
+  {/* Background Video – Mobile */}
+  <video
+    className="absolute inset-0 w-full h-full object-cover md:hidden"
+    src="/videos/como-chegar-mobile.mp4"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+
+  {/* Background Video – Desktop */}
+  <video
+    className="absolute inset-0 w-full h-full object-cover hidden md:block"
+    src="/videos/como-chegar-desktop.mp4"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+
+  {/* Text Box */}
+  <div
+    className="
+      relative z-10 text-center
+      w-[90%] sm:w-[80%] md:max-w-2xl
+      px-4
+      md:-translate-y-12
+      max-[400px]:max-w-[160px]
+      max-[400px]:min-h-[260px]
+      max-[400px]:px-2
+      max-[400px]:py-4
+      max-[400px]:flex max-[400px]:flex-col max-[400px]:justify-center
+      [overflow-wrap:anywhere] [word-break:break-word] [hyphens:auto]
+    "
+  >
+    <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-6">
+      Como Chegar
+    </h2>
+
+    <p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
+      Em Avaré
+    </p>
+
+    <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed">
+      Para quem vem de São Paulo: o trajeto leva cerca de 3 horas de carro pela Rodovia Castelo Branco.
+    </p>
+
+    <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed">
+      Para quem vem de outras cidades: há opções de ônibus até Avaré; de lá, é possível pegar um táxi ou transporte por aplicativo até o local.
+    </p>
+
+    <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-bold leading-relaxed">
+      Parada obrigatória
+    </p>
+
+    <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-2 space-y-2 mb-6">
+      <li>
+        <span className="font-semibold">Ida:</span> Parmegiana no Camponesa
+        <br />
+        <span className="italic">(Rod. Pres. Castello Branco, Km 198)</span>
+      </li>
+      <li>
+        <span className="font-semibold">Volta:</span> Sanduíche de Parma na Quinta do Marquês
+        <br />
+        <span className="italic">(Rod. Pres. Castello Branco, Km 57)</span>
+      </li>
+    </ul>
+
+    <p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
+      No Casamento
+    </p>
+
+    <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-2 space-y-2 mb-6">
+      <li>
+        <span className="font-semibold">Ponto de saída de vans:</span>
+        <br />
+        <a
+          href="https://maps.google.com/?q=Hotel+Eco+Blue+Avaré" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#245a40] transition"
         >
-          {/* Background Video – Mobile */}
-          <video
-            className="absolute inset-0 w-full h-full object-cover md:hidden"
-            src="/videos/como-chegar-mobile.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
-
-          {/* Background Video – Desktop */}
-          <video
-            className="absolute inset-0 w-full h-full object-cover hidden md:block"
-            src="/videos/como-chegar-desktop.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
-
-          {/* Text Box */}
-          <div
-            className="
-                  relative z-10 text-center
-                  w-[90%] sm:w-[80%] md:max-w-2xl
-                  px-4
-                  md:-translate-y-32   /* 👈 only move up on desktop */
-                  max-[400px]:max-w-[160px]
-                  max-[400px]:min-h-[260px]
-                  max-[400px]:px-2
-                  max-[400px]:py-4
-                  max-[400px]:flex max-[400px]:flex-col max-[400px]:justify-center
-                  [overflow-wrap:anywhere] [word-break:break-word] [hyphens:auto]
-                "
-          >
-
-            <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-6">
-              Como Chegar
-            </h2>
-            <p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
-              Em Avaré
-            </p>
-
-            <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed">
-              Para quem vem de São Paulo: o trajeto leva cerca de 3 horas de carro pela Rodovia Castelo Branco.
-            </p>
-
-            <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed">
-              Para quem vem de outras cidades: há opções de ônibus até Avaré; de lá, é possível pegar um táxi ou transporte por aplicativo até o local.
-            </p>
+          Hotel Eco Blue
+        </a>
+        <br />
+        <a
+          href="https://maps.google.com/?q=Estância+Avaré+Hotel"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#245a40] transition"
+        >
+          Estância Avaré Hotel
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
 
 
-
-            <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-bold leading-relaxed">
-              Parada obrigatória
-            </p>
-
-            <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-2 space-y-2 mb-6">
-              <li>
-                <span className="font-semibold">Ida:</span> Parmegiana no Camponesa
-                <br />
-                <span className="italic">(Rod. Pres. Castello Branco, Km 198)</span>
-              </li>
-              <li>
-                <span className="font-semibold">Volta:</span> Sanduíche de Parma na Quinta do Marquês
-                <br />
-                <span className="italic">(Rod. Pres. Castello Branco, Km 57)</span>
-              </li>
-            </ul>
-            <p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
-              No Casamento
-            </p>
-            <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-2 space-y-2 mb-6">
-              <li>
-                <span className="font-semibold">Ponto de saída de vans:</span>
-                <br />
-                <a
-                  href="https://maps.google.com/?q=Hotel+Eco+Blue+Avaré" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-[#245a40] transition"
-                >
-                  Hotel Eco Blue
-                </a>
-                <br />
-                <a
-                  href="https://maps.google.com/?q=Estância+Avaré+Hotel"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-[#245a40] transition"
-                >
-                  Estância Avaré Hotel
-                </a>
-              </li>
-
-            </ul>
-
-
-          </div>
-        </section>
 
         {/* Dicas (link kept; no images) */}
         <section
