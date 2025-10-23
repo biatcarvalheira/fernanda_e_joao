@@ -137,8 +137,8 @@ export default function Home() {
                 Festa de Boas-Vindas
               </p>
               <div className="text-[#1c5134] text-[0.8rem] sm:text-sm md:text-base font-medium leading-relaxed mt-3 space-y-1">
-                <p>Local: A definir</p>
-                <p>Horário: A definir</p>
+                <p>Local: Hotel Eco Blue</p>
+                <p>Horário: 14h</p>
                 <p>Traje: Roupas leves e de banho</p>
               </div>
 
