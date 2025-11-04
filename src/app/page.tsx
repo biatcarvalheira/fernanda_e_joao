@@ -85,15 +85,15 @@ export default function Home() {
               ainda mais especial com a presença de cada um de vocês.
             </p>
 
-           <p
-  className="font-style-script mt-2 text-[#1c5134] text-3xl sm:text-4xl md:text-5xl leading-snug tracking-wide"
-  style={{
-    textShadow:
-      "0.5px 0.5px 0 #1c5134, -0.5px -0.5px 0 #1c5134, 0.5px -0.5px 0 #1c5134, -0.5px 0.5px 0 #1c5134",
-  }}
->
-  Faltam
-</p>
+            <p
+              className="font-style-script mt-2 text-[#1c5134] text-3xl sm:text-4xl md:text-5xl leading-snug tracking-wide"
+              style={{
+                textShadow:
+                  "0.5px 0.5px 0 #1c5134, -0.5px -0.5px 0 #1c5134, 0.5px -0.5px 0 #1c5134, -0.5px 0.5px 0 #1c5134",
+              }}
+            >
+              Faltam
+            </p>
 
 
             {/* 👉 Countdown goes here */}
@@ -175,34 +175,34 @@ export default function Home() {
         </section>
 
         {/* Como chegar*/}
-   
-<section
-  id="como-chegar"
-  className="relative min-h-screen flex items-center justify-center overflow-hidden md:overflow-visible md:pt-16"
->
-  {/* Background Video – Mobile */}
-  <video
-    className="absolute inset-0 w-full h-full object-cover md:hidden"
-    src="/videos/como-chegar-mobile.mp4"
-    autoPlay
-    loop
-    muted
-    playsInline
-  />
 
-  {/* Background Video – Desktop */}
-  <video
-    className="absolute inset-0 w-full h-full object-cover hidden md:block"
-    src="/videos/como-chegar-desktop.mp4"
-    autoPlay
-    loop
-    muted
-    playsInline
-  />
+        <section
+          id="como-chegar"
+          className="relative min-h-screen flex items-center justify-center overflow-hidden md:overflow-visible md:pt-16"
+        >
+          {/* Background Video – Mobile */}
+          <video
+            className="absolute inset-0 w-full h-full object-cover md:hidden"
+            src="/videos/como-chegar-mobile.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
 
-  {/* Text Box */}
-  <div
-    className="
+          {/* Background Video – Desktop */}
+          <video
+            className="absolute inset-0 w-full h-full object-cover hidden md:block"
+            src="/videos/como-chegar-desktop.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+
+          {/* Text Box */}
+          <div
+            className="
       relative z-10 text-center
       w-[90%] sm:w-[80%] md:max-w-2xl
       px-4
@@ -214,69 +214,69 @@ export default function Home() {
       max-[400px]:flex max-[400px]:flex-col max-[400px]:justify-center
       [overflow-wrap:anywhere] [word-break:break-word] [hyphens:auto]
     "
-  >
-    <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-6">
-      Como Chegar
-    </h2>
+          >
+            <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-6">
+              Como Chegar
+            </h2>
 
-    <p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
-      Em Avaré
-    </p>
+            <p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
+              Em Avaré
+            </p>
 
-    <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed">
-      Para quem vem de São Paulo: o trajeto leva cerca de 3 horas de carro pela Rodovia Castelo Branco.
-    </p>
+            <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed">
+              Para quem vem de São Paulo: o trajeto leva cerca de 3 horas de carro pela Rodovia Castelo Branco.
+            </p>
 
-    <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed">
-      Para quem vem de outras cidades: há opções de ônibus até Avaré; de lá, é possível pegar um táxi ou transporte por aplicativo até o local.
-    </p>
+            <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed">
+              Para quem vem de outras cidades: há opções de ônibus até Avaré; de lá, é possível pegar um táxi ou transporte por aplicativo até o local.
+            </p>
 
-    <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-bold leading-relaxed">
-      Parada obrigatória
-    </p>
+            <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-bold leading-relaxed">
+              Parada obrigatória
+            </p>
 
-    <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-2 space-y-2 mb-6">
-      <li>
-        <span className="font-semibold">Ida:</span> Parmegiana no Camponesa
-        <br />
-        <span className="italic">(Rod. Pres. Castello Branco, Km 198)</span>
-      </li>
-      <li>
-        <span className="font-semibold">Volta:</span> Sanduíche de Parma na Quinta do Marquês
-        <br />
-        <span className="italic">(Rod. Pres. Castello Branco, Km 57)</span>
-      </li>
-    </ul>
+            <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-2 space-y-2 mb-6">
+              <li>
+                <span className="font-semibold">Ida:</span> Parmegiana no Camponesa
+                <br />
+                <span className="italic">(Rod. Pres. Castello Branco, Km 198)</span>
+              </li>
+              <li>
+                <span className="font-semibold">Volta:</span> Sanduíche de Parma na Quinta do Marquês
+                <br />
+                <span className="italic">(Rod. Pres. Castello Branco, Km 57)</span>
+              </li>
+            </ul>
 
-    <p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
-      No Casamento
-    </p>
+            <p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
+              No Casamento
+            </p>
 
-    <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-2 space-y-2 mb-6">
-      <li>
-        <span className="font-semibold">Ponto de saída de vans:</span>
-        <br />
-        <a
-          href="https://maps.google.com/?q=Hotel+Eco+Blue+Avaré" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline hover:text-[#245a40] transition"
-        >
-          Hotel Eco Blue
-        </a>
-        <br />
-        <a
-          href="https://maps.google.com/?q=Estância+Avaré+Hotel"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline hover:text-[#245a40] transition"
-        >
-          Estância Avaré Hotel
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
+            <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-2 space-y-2 mb-6">
+              <li>
+                <span className="font-semibold">Ponto de saída de vans:</span>
+                <br />
+                <a
+                  href="https://maps.google.com/?q=Hotel+Eco+Blue+Avaré"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-[#245a40] transition"
+                >
+                  Hotel Eco Blue
+                </a>
+                <br />
+                <a
+                  href="https://maps.google.com/?q=Estância+Avaré+Hotel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-[#245a40] transition"
+                >
+                  Estância Avaré Hotel
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
         {/* Dicas (link kept; no images) */}
         <section
           id="dicas"
@@ -299,35 +299,35 @@ export default function Home() {
             <p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
               Restaurantes na cidade
             </p>
-          <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-4 mb-10 space-y-4">
-  <li>
-    <span className="font-semibold">Manacá Café</span> | (14) 99673-1025
-    <br />
-    <span className="italic">Av. Prefeito Paulo Novaes, 1025, Avaré/SP</span>
-  </li>
+            <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-4 mb-10 space-y-4">
+              <li>
+                <span className="font-semibold">Manacá Café</span> | (14) 99673-1025
+                <br />
+                <span className="italic">Av. Prefeito Paulo Novaes, 1025, Avaré/SP</span>
+              </li>
 
-  <li>
-    <span className="font-semibold">Empório Pé de Café</span>
-    <br />
-    <span className="italic">Av. Ouro Verde, 318, Avaré/SP</span>
-  </li>
+              <li>
+                <span className="font-semibold">Empório Pé de Café</span>
+                <br />
+                <span className="italic">Av. Ouro Verde, 318, Avaré/SP</span>
+              </li>
 
-  <li>
-    <span className="font-semibold">Pizzaria Paulistana</span> | (14) 3732-5318
-    <br />
-    <span className="italic">R. Pernambuco, 777, Avaré/SP</span>
-  </li>
+              <li>
+                <span className="font-semibold">Pizzaria Paulistana</span> | (14) 3732-5318
+                <br />
+                <span className="italic">R. Pernambuco, 777, Avaré/SP</span>
+              </li>
 
-  <li>
-    <span className="font-semibold">Bruna Gauss</span> | (14) 3731-3168
-    <br />
-    <span className="italic">R. Minas Gerais, 1324, Avaré/SP</span>
-  </li>
-</ul>
+              <li>
+                <span className="font-semibold">Bruna Gauss</span> | (14) 3731-3168
+                <br />
+                <span className="italic">R. Minas Gerais, 1324, Avaré/SP</span>
+              </li>
+            </ul>
 
-<p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
-  Restaurantes na represa
-</p>
+            <p className="text-[#1c5134] text-lg sm:text-xl md:text-2xl font-extrabold">
+              Restaurantes na represa
+            </p>
 
             <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-4 space-y-4">
               <li>
@@ -347,71 +347,95 @@ export default function Home() {
         </section>
 
         {/* Hoteis (link kept; no images) */}
-<section
-  id="hospedagem"
-  className="
+        <section
+          id="hospedagem"
+          className="
     relative min-h-screen flex items-center 
     justify-center md:justify-center
     overflow-hidden
   "
->
-  {/* Background image for mobile */}
-  <div className="absolute inset-0 md:hidden">
-    <img
-      src="/images/hospedagem-mobile.png"
-      alt="Hospedagem Mobile Background"
-      className="w-full h-full object-cover"
-    />
-  </div>
+        >
+          {/* Background image for mobile */}
+          <div className="absolute inset-0 md:hidden">
+            <img
+              src="/images/hospedagem-mobile.png"
+              alt="Hospedagem Mobile Background"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-  {/* Background image for desktop */}
-  <div className="absolute inset-0 hidden md:block">
-    <img
-      src="/images/hospedagem-desktop.png"
-      alt="Hospedagem Desktop Background"
-      className="w-full h-full object-cover"
-    />
-  </div>
+          {/* Background image for desktop */}
+          <div className="absolute inset-0 hidden md:block">
+            <img
+              src="/images/hospedagem-desktop.png"
+              alt="Hospedagem Desktop Background"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-  {/* Text box */}
-  <div
-    className="
+          {/* Text box */}
+          <div
+            className="
       relative z-10 text-center
       w-[90%] sm:w-[80%] md:max-w-lg
       px-4
       md:ml-[15%] text-[#1c5134]
     "
-  >
-    {/* Centered heading */}
-    <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-8">
-      Hospedagem
-    </h2>
+          >
+            {/* Centered heading */}
+            <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-8">
+              Hospedagem
+            </h2>
 
-    {/* Centered text */}
-    <div className="text-xs sm:text-sm md:text-base font-medium leading-relaxed space-y-6">
-      <div>
-        <p className="font-bold">Eco Blue Resort</p>
-        <p className="mt-2 text-xs sm:text-sm md:text-base">
-          Rodovia João Mellão, km 273 - 5 - Represa Jurumirim, Avaré - SP, 19704-201
-        </p>
-      </div>
+            {/* Centered text */}
+            <div className="text-xs sm:text-sm md:text-base font-medium leading-relaxed space-y-6">
+              <div>
+                <p className="font-bold">Eco Blue Resort</p>
+                <p className="mt-2 text-xs sm:text-sm md:text-base leading-relaxed">
+                  <a
+                    href="https://hcchotels.letsbook.com.br/reserva/busca"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-[#245a40] transition"
+                  >
+                    https://hcchotels.letsbook.com.br/reserva/busca
+                  </a>
+                  <br />
+                  <span className="font-semibold">
+                    (use o código promocional <span className="uppercase">FERNANDAEJOAO</span>)
+                  </span>
+                </p>
 
-      <div>
-        <p className="font-bold">Estância Avaré Hotel</p>
-        <p className="mt-2 text-xs sm:text-sm md:text-base">
-          Av. Pref. Paulo Novaes, 2 - Jardim Botânico, Avaré - SP
-        </p>
-      </div>
 
-      <div>
-        <p className="font-bold">Jurumirim Imóveis</p>
-        <p className="mt-2 text-xs sm:text-sm md:text-base">
-          Aluguel de casas na represa: (14) 3512-0967
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+                <p className="mt-2 text-xs sm:text-sm md:text-base">
+                  Rodovia João Mellão, km 273 - 5 - Represa Jurumirim, Avaré - SP, 19704-201
+                </p>
+              </div>
+
+              <div>
+                <p className="font-bold">Estância Avaré Hotel</p>
+                <p className="mt-2 text-xs sm:text-sm md:text-base">
+                  Av. Pref. Paulo Novaes, 2 - Jardim Botânico, Avaré - SP
+                </p>
+                <p className="mt-2 text-xs sm:text-sm md:text-base">
+                  (14) 99176-8717
+                </p>
+              </div>
+
+              <div>
+                <p className="font-bold">Jurumirim Imóveis</p>
+                <p className="mt-2 text-xs sm:text-sm md:text-base">
+                  Aluguel de casas na represa: (14) 3512-0967
+                </p>
+              </div>
+              <div>
+                <p className="mt-2 text-xs sm:text-sm md:text-base">
+                  Obs. Haverá transfer exclusivo dos hotéis para o local da cerimônia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
 
