@@ -383,7 +383,7 @@ export default function Home() {
     "
           >
             {/* Centered heading */}
-            <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-8">
+           <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-8">
               Hospedagem
             </h2>
 
@@ -453,17 +453,63 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Presentes (link kept) */}
-        <section id="presentes" className="relative min-h-screen w-full bg-neutral-100 flex items-center justify-center px-4 py-16">
-          <a
-            href="https://www.listapresentesbarbaraebruno.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-neutral-800 font-bold text-5xl md:text-7xl hover:text-neutral-600 transition duration-300"
-          >
-            PRESENTES
-          </a>
-        </section>
+{/* Presentes */}
+<section
+  id="presentes"
+  className="relative min-h-screen flex items-center justify-center overflow-hidden"
+>
+  {/* Background image – mobile */}
+  <div className="absolute inset-0 md:hidden">
+    <img
+      src="/images/presentes-mobile.png"              // ← troque pelo seu arquivo
+      alt="Presentes - Fundo Mobile"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  {/* Background image – desktop */}
+  <div className="absolute inset-0 hidden md:block">
+    <img
+      src="/images/presentes-desktop.png"             // ← troque pelo seu arquivo
+      alt="Presentes - Fundo Desktop"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  {/* Conteúdo */}
+  <div className="relative z-10 text-center text-[#1c5134] w-[90%] sm:w-[80%] md:max-w-2xl px-4">
+    {/* Título menor */}
+   <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-8">
+             Presentes
+            </h2>
+    {/* Lista de hyperlinks */}
+    <ul className="mt-6 space-y-4 text-sm sm:text-base md:text-lg font-medium">
+      <li>
+        <a
+          href="https://www.fernandaejoaopresentes.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#245a40] transition"
+        >
+          Fernanda & João | Lista de Presentes
+        </a>
+      </li>
+
+      {/* links adicionais */}
+      <li>
+        <a
+          href="https://upmaiscasa.com.br/apps/lista-presentes/casamento-fernanda-e-joao"  // exemplo/placeholder
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#245a40] transition"
+        >
+          Casamento Fernanda e João | UP + Casa
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
 
         {/* RSVP Section (link kept) */}
         <section
