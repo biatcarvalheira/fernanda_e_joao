@@ -444,14 +444,89 @@ export default function Home() {
 
 
 
-        {/* Cabelo & Make (no videos) */}
-        <section id="cabelo-make" className="relative min-h-screen w-full bg-neutral-50 flex items-center justify-center">
-          <div className="relative z-10 text-center px-4">
-            <a href="/cabelo-make" className="text-neutral-800 hover:text-neutral-600 font-bold transition duration-300 text-5xl sm:text-6xl md:text-7xl leading-tight">
-              Cabelo & Make
-            </a>
-          </div>
-        </section>
+        {/* Cabelo & Make */}
+<section
+  id="cabelo-make"
+  className="relative min-h-screen flex items-center justify-center overflow-hidden"
+>
+  {/* Background image – mobile */}
+  <div className="absolute inset-0 md:hidden">
+    <img
+      src="/images/cabelo-make-mobile.png"   // 👈 replace with your mobile image
+      alt="Cabelo & Make - Fundo Mobile"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  {/* Background image – desktop */}
+  <div className="absolute inset-0 hidden md:block">
+    <img
+      src="/images/cabelo-make-desktop.png"  // 👈 replace with your desktop image
+      alt="Cabelo & Make - Fundo Desktop"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  {/* Content */}
+  <div className="relative z-10 text-center text-[#1c5134] w-[90%] sm:w-[80%] md:max-w-2xl px-4">
+    {/* Title */}
+     <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-8">
+             Cabelo & Make
+            </h2>
+
+    {/* Professionals List */}
+    <ul className="space-y-5 text-xs sm:text-sm md:text-base font-medium leading-relaxed">
+      <li>
+        <span className="font-bold text-base sm:text-lg md:text-xl">Luciana Liar</span>
+        <br />
+        <span>Penteado</span>
+        <br />
+        <span className="italic">14 996981685</span>
+      </li>
+
+      <li>
+        <span className="font-bold text-base sm:text-lg md:text-xl">Camila Karine</span>
+        <br />
+        <span>Cabelo e maquiagem</span>
+        <br />
+        <span className="italic">63 999990143</span>
+      </li>
+
+            <li>
+        <span className="font-bold text-base sm:text-lg md:text-xl">Stephanie Santos</span>
+        <br />
+        <span>Cabelo e maquiagem</span>
+        <br />
+        <span className="italic">14 996433558</span>
+      </li>
+
+            <li>
+        <span className="font-bold text-base sm:text-lg md:text-xl">Monique Louro</span>
+        <br />
+        <span>Cabelo e maquiagem</span>
+        <br />
+        <span className="italic">14 996232121</span>
+      </li>
+
+            <li>
+        <span className="font-bold text-base sm:text-lg md:text-xl">Bruna</span>
+        <br />
+        <span>Maquiagem</span>
+        <br />
+        <span className="italic">14 996967480</span>
+      </li>
+
+         <li>
+        <span className="font-bold text-base sm:text-lg md:text-xl">Meire Rodrigues</span>
+        <br />
+        <span>Maquiagem</span>
+        <br />
+        <span className="italic">14 996830403</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
 
 {/* Presentes */}
 <section
