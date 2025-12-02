@@ -39,7 +39,13 @@ const styleScript = Style_Script({
 export const metadata: Metadata = {
   title: "Fernanda e João",
   description: "Casamento Fernanda e João",
+    icons: {
+    icon: "/favicon.ico",        // standard
+    shortcut: "/favicon.ico",    // ensures Safari support
+  },
 };
+
+
 
 export default function RootLayout({
   children,
