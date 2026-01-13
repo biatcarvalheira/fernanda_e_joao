@@ -4,8 +4,6 @@ import Navbar from "../components/navbar";
 import Countdown from "../components/countdown";
 
 export default function Home() {
-
-
   return (
     <div className="min-h-screen w-full">
       <Navbar />
@@ -76,17 +74,24 @@ export default function Home() {
     "
           >
             <p className="text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed sm:leading-loose max-[400px]:leading-normal">
-              Queridos familiares e amigos, é com imensa alegria que compartilhamos com vocês os preparativos
-              e as informações sobre o nosso casamento.
+              Queridos familiares e amigos, é com imensa alegria que
+              compartilhamos com vocês os preparativos e as informações sobre o
+              nosso casamento.
             </p>
 
             <p className="mt-6 text-[#1c5134] text-sm sm:text-lg md:text-xl font-semibold leading-relaxed sm:leading-loose max-[400px]:leading-normal">
-              Tudo está sendo preparado com muito carinho para que este momento seja inesquecível, e será
-              ainda mais especial com a presença de cada um de vocês.
+              Tudo está sendo preparado com muito carinho para que este momento
+              seja inesquecível, e será ainda mais especial com a presença de
+              cada um de vocês.
             </p>
-
             <p
-              className="font-style-script mt-2 text-[#1c5134] text-3xl sm:text-4xl md:text-5xl leading-snug tracking-wide"
+              className="
+    font-style-script
+    mt-6 md:mt-2
+    text-[#1c5134]
+    text-3xl sm:text-4xl md:text-3xl
+    leading-snug tracking-wide
+  "
               style={{
                 textShadow:
                   "0.5px 0.5px 0 #1c5134, -0.5px -0.5px 0 #1c5134, 0.5px -0.5px 0 #1c5134, -0.5px 0.5px 0 #1c5134",
@@ -95,7 +100,6 @@ export default function Home() {
               Faltam
             </p>
 
-
             {/* 👉 Countdown goes here */}
             <div className="mt-8">
               <Countdown target="2026-04-20T14:30:00-03:00" />
@@ -103,7 +107,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
 
         {/* Programacao */}
         <section
@@ -141,7 +144,6 @@ export default function Home() {
                 <p>Horário: 14h</p>
                 <p>Traje: Roupas leves e de banho</p>
               </div>
-
             </div>
 
             {/* 2️⃣ Cerimônia */}
@@ -224,11 +226,14 @@ export default function Home() {
             </p>
 
             <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed">
-              Para quem vem de São Paulo: o trajeto leva cerca de 3 horas de carro pela Rodovia Castelo Branco.
+              Para quem vem de São Paulo: o trajeto leva cerca de 3 horas de
+              carro pela Rodovia Castelo Branco.
             </p>
 
             <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed">
-              Para quem vem de outras cidades: há opções de ônibus até Avaré; de lá, é possível pegar um táxi ou transporte por aplicativo até o local.
+              Para quem vem de outras cidades: há opções de ônibus até Avaré; de
+              lá, é possível pegar um táxi ou transporte por aplicativo até o
+              local.
             </p>
 
             <p className="mt-6 text-[#1c5134] text-xs sm:text-sm md:text-base font-bold leading-relaxed">
@@ -237,14 +242,20 @@ export default function Home() {
 
             <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-2 space-y-2 mb-6">
               <li>
-                <span className="font-semibold">Ida:</span> Parmegiana no Camponesa
+                <span className="font-semibold">Ida:</span> Parmegiana no
+                Camponesa
                 <br />
-                <span className="italic">(Rod. Pres. Castello Branco, Km 198)</span>
+                <span className="italic">
+                  (Rod. Pres. Castello Branco, Km 198)
+                </span>
               </li>
               <li>
-                <span className="font-semibold">Volta:</span> Sanduíche de Parma na Quinta do Marquês
+                <span className="font-semibold">Volta:</span> Sanduíche de Parma
+                na Quinta do Marquês
                 <br />
-                <span className="italic">(Rod. Pres. Castello Branco, Km 57)</span>
+                <span className="italic">
+                  (Rod. Pres. Castello Branco, Km 57)
+                </span>
               </li>
             </ul>
 
@@ -301,9 +312,12 @@ export default function Home() {
             </p>
             <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-4 mb-10 space-y-4">
               <li>
-                <span className="font-semibold">Manacá Café</span> | (14) 99673-1025
+                <span className="font-semibold">Manacá Café</span> | (14)
+                99673-1025
                 <br />
-                <span className="italic">Av. Prefeito Paulo Novaes, 1025, Avaré/SP</span>
+                <span className="italic">
+                  Av. Prefeito Paulo Novaes, 1025, Avaré/SP
+                </span>
               </li>
 
               <li>
@@ -313,13 +327,15 @@ export default function Home() {
               </li>
 
               <li>
-                <span className="font-semibold">Pizzaria Paulistana</span> | (14) 3732-5318
+                <span className="font-semibold">Pizzaria Paulistana</span> |
+                (14) 3732-5318
                 <br />
                 <span className="italic">R. Pernambuco, 777, Avaré/SP</span>
               </li>
 
               <li>
-                <span className="font-semibold">Bruna Gauss</span> | (14) 3731-3168
+                <span className="font-semibold">Bruna Gauss</span> | (14)
+                3731-3168
                 <br />
                 <span className="italic">R. Minas Gerais, 1324, Avaré/SP</span>
               </li>
@@ -331,18 +347,20 @@ export default function Home() {
 
             <ul className="text-[#1c5134] text-xs sm:text-sm md:text-base font-medium leading-relaxed mt-4 space-y-4">
               <li>
-                <span className="font-semibold">Restaurante Toa Toa </span> | (14) 99652-2591
+                <span className="font-semibold">Restaurante Toa Toa </span> |
+                (14) 99652-2591
                 <br />
-                <span className="italic">Rua Jurumirim - Ponta dos Cambarás</span>
+                <span className="italic">
+                  Rua Jurumirim - Ponta dos Cambarás
+                </span>
               </li>
               <li>
-                <span className="font-semibold">Espaço ISA </span> | (11) 98674- 5976
+                <span className="font-semibold">Espaço ISA </span> | (11) 98674-
+                5976
                 <br />
                 <span className="italic">Rodovia João Mellão, SP-255</span>
               </li>
             </ul>
-
-
           </div>
         </section>
 
@@ -402,13 +420,14 @@ export default function Home() {
                   </a>
                   <br />
                   <span className="font-semibold">
-                    (use o código promocional <span className="uppercase">FERNANDAEJOAO</span>)
+                    (use o código promocional{" "}
+                    <span className="uppercase">FERNANDAEJOAO</span>)
                   </span>
                 </p>
 
-
                 <p className="mt-2 text-xs sm:text-sm md:text-base">
-                  Rodovia João Mellão, km 273 - 5 - Represa Jurumirim, Avaré - SP, 19704-201
+                  Rodovia João Mellão, km 273 - 5 - Represa Jurumirim, Avaré -
+                  SP, 19704-201
                 </p>
               </div>
 
@@ -430,19 +449,13 @@ export default function Home() {
               </div>
               <div>
                 <p className="mt-2 text-xs sm:text-sm md:text-base">
-                  Obs. Haverá transfer exclusivo dos hotéis para o local da cerimônia.
+                  Obs. Haverá transfer exclusivo dos hotéis para o local da
+                  cerimônia.
                 </p>
               </div>
             </div>
           </div>
         </section>
-
-
-
-
-
-
-
 
         {/* Cabelo & Make */}
         <section
@@ -452,7 +465,7 @@ export default function Home() {
           {/* Background image – mobile */}
           <div className="absolute inset-0 md:hidden">
             <img
-              src="/images/cabelo-make-mobile.png"   // 👈 replace with your mobile image
+              src="/images/cabelo-make-mobile.png" // 👈 replace with your mobile image
               alt="Cabelo & Make - Fundo Mobile"
               className="w-full h-full object-cover"
             />
@@ -461,7 +474,7 @@ export default function Home() {
           {/* Background image – desktop */}
           <div className="absolute inset-0 hidden md:block">
             <img
-              src="/images/cabelo-make-desktop.png"  // 👈 replace with your desktop image
+              src="/images/cabelo-make-desktop.png" // 👈 replace with your desktop image
               alt="Cabelo & Make - Fundo Desktop"
               className="w-full h-full object-cover"
             />
@@ -477,7 +490,9 @@ export default function Home() {
             {/* Professionals List */}
             <ul className="space-y-5 text-xs sm:text-sm md:text-base font-medium leading-relaxed">
               <li>
-                <span className="font-bold text-base sm:text-lg md:text-xl">Luciana Liar</span>
+                <span className="font-bold text-base sm:text-lg md:text-xl">
+                  Luciana Liar
+                </span>
                 <br />
                 <span>Penteado</span>
                 <br />
@@ -494,7 +509,9 @@ export default function Home() {
               </li>
 
               <li>
-                <span className="font-bold text-base sm:text-lg md:text-xl">Camila Karine</span>
+                <span className="font-bold text-base sm:text-lg md:text-xl">
+                  Camila Karine
+                </span>
                 <br />
                 <span>Cabelo e maquiagem</span>
                 <br />
@@ -511,7 +528,9 @@ export default function Home() {
               </li>
 
               <li>
-                <span className="font-bold text-base sm:text-lg md:text-xl">Stephanie Santos</span>
+                <span className="font-bold text-base sm:text-lg md:text-xl">
+                  Stephanie Santos
+                </span>
                 <br />
                 <span>Cabelo e maquiagem</span>
                 <br />
@@ -525,11 +544,12 @@ export default function Home() {
                 >
                   @stesantosmakeup
                 </a>
-
               </li>
 
               <li>
-                <span className="font-bold text-base sm:text-lg md:text-xl">Monique Louro</span>
+                <span className="font-bold text-base sm:text-lg md:text-xl">
+                  Monique Louro
+                </span>
                 <br />
                 <span>Cabelo e maquiagem</span>
                 <br />
@@ -546,7 +566,9 @@ export default function Home() {
               </li>
 
               <li>
-                <span className="font-bold text-base sm:text-lg md:text-xl">Bruna</span>
+                <span className="font-bold text-base sm:text-lg md:text-xl">
+                  Bruna
+                </span>
                 <br />
                 <span>Maquiagem</span>
                 <br />
@@ -563,7 +585,9 @@ export default function Home() {
               </li>
 
               <li>
-                <span className="font-bold text-base sm:text-lg md:text-xl">Meire Rodrigues</span>
+                <span className="font-bold text-base sm:text-lg md:text-xl">
+                  Meire Rodrigues
+                </span>
                 <br />
                 <span>Maquiagem</span>
                 <br />
@@ -582,7 +606,6 @@ export default function Home() {
           </div>
         </section>
 
-
         {/* Presentes */}
         <section
           id="presentes"
@@ -591,7 +614,7 @@ export default function Home() {
           {/* Background image – mobile */}
           <div className="absolute inset-0 md:hidden">
             <img
-              src="/images/presentes-mobile.png"              // ← troque pelo seu arquivo
+              src="/images/presentes-mobile.png" // ← troque pelo seu arquivo
               alt="Presentes - Fundo Mobile"
               className="w-full h-full object-cover"
             />
@@ -600,7 +623,7 @@ export default function Home() {
           {/* Background image – desktop */}
           <div className="absolute inset-0 hidden md:block">
             <img
-              src="/images/presentes-desktop.png"             // ← troque pelo seu arquivo
+              src="/images/presentes-desktop.png" // ← troque pelo seu arquivo
               alt="Presentes - Fundo Desktop"
               className="w-full h-full object-cover"
             />
@@ -628,7 +651,7 @@ export default function Home() {
               {/* links adicionais */}
               <li>
                 <a
-                  href="https://upmaiscasa.com.br/apps/lista-presentes/casamento-fernanda-e-joao"  // exemplo/placeholder
+                  href="https://upmaiscasa.com.br/apps/lista-presentes/casamento-fernanda-e-joao" // exemplo/placeholder
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-[#245a40] transition"
@@ -640,7 +663,6 @@ export default function Home() {
           </div>
         </section>
 
-
         {/* RSVP Section (link kept) */}
         <section
           id="rsvp"
@@ -649,7 +671,7 @@ export default function Home() {
           {/* Background (mobile) */}
           <div className="absolute inset-0 md:hidden">
             <img
-              src="/images/rsvp-bg-mobile.png"   // 👈 replace with your mobile background
+              src="/images/rsvp-bg-mobile.png" // 👈 replace with your mobile background
               alt=""
               className="w-full h-full object-cover"
               aria-hidden="true"
@@ -659,7 +681,7 @@ export default function Home() {
           {/* Background (desktop) */}
           <div className="absolute inset-0 hidden md:block">
             <img
-              src="/images/rsvp-bg-desktop.png"  // 👈 replace with your desktop background
+              src="/images/rsvp-bg-desktop.png" // 👈 replace with your desktop background
               alt=""
               className="w-full h-full object-cover"
               aria-hidden="true"
@@ -668,13 +690,13 @@ export default function Home() {
 
           {/* Button image in the center */}
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeARpmW7bN3zqU3wFRnJ-QCK3IhTIA6PKQBafX2hSXsJYnfHQ/viewform?usp=header"   // 👈 replace with your Google Forms link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeARpmW7bN3zqU3wFRnJ-QCK3IhTIA6PKQBafX2hSXsJYnfHQ/viewform?usp=header" // 👈 replace with your Google Forms link
             target="_blank"
             rel="noopener noreferrer"
             className="relative z-10 group"
           >
             <img
-              src="/images/rsvp-button.png"  // 👈 replace with your button image
+              src="/images/rsvp-button.png" // 👈 replace with your button image
               alt="RSVP"
               className="block w-64 sm:w-72 md:w-80 lg:w-96 h-auto
              transition-transform duration-200
@@ -682,8 +704,6 @@ export default function Home() {
             />
           </a>
         </section>
-
-
       </main>
     </div>
   );
