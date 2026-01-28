@@ -140,7 +140,7 @@ export default function Home() {
                 Festa de Boas-Vindas
               </p>
               <div className="text-[#1c5134] text-[0.8rem] sm:text-sm md:text-base font-medium leading-relaxed mt-3 space-y-1">
-                <p>Local: Hotel Eco Blue</p>
+                <p>Local: A definir</p>
                 <p>Horário: 14h</p>
                 <p>Traje: Roupas leves e de banho</p>
               </div>
@@ -168,7 +168,17 @@ export default function Home() {
                 Casamento
               </p>
               <div className="text-[#1c5134] text-[0.8rem] sm:text-sm md:text-base font-medium leading-relaxed mt-3 space-y-1">
-                <p>Local: Anexo Golf Avaré </p>
+                <p>
+                  Local:{" "}
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Anexo+Golf+Avar%C3%A9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-2 hover:opacity-80 transition"
+                  >
+                    Anexo Golf Avaré
+                  </a>
+                </p>
                 <p>Horário: 15h</p>
                 <p>Traje: Social</p>
               </div>
