@@ -141,7 +141,7 @@ export default function Home() {
               </p>
               <div className="text-[#1c5134] text-[0.8rem] sm:text-sm md:text-base font-medium leading-relaxed mt-3 space-y-1">
                 <p>Local: A definir</p>
-                <p>Horário: 14h</p>
+                <p>Horário: 13h</p>
                 <p>Traje: Roupas leves e de banho</p>
               </div>
             </div>
@@ -485,8 +485,8 @@ export default function Home() {
 
         {/* Cabelo & Make */}
         <section
-          id="cabelo-make"
-          className="relative
+  id="cabelo-make"
+  className="relative
     min-h-screen
     flex items-center justify-center
     overflow-hidden
@@ -495,150 +495,184 @@ export default function Home() {
     sm:pt-40 sm:pb-40
     md:pt-56 md:pb-56
     lg:pt-64 lg:pb-64"
+>
+  {/* Background image – mobile */}
+  <div className="absolute inset-0 md:hidden">
+    <img
+      src="/images/cabelo-make-mobile.png"
+      alt="Cabelo & Make - Fundo Mobile"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  {/* Background image – desktop */}
+  <div className="absolute inset-0 hidden md:block">
+    <img
+      src="/images/cabelo-make-desktop.png"
+      alt="Cabelo & Make - Fundo Desktop"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  {/* Content */}
+  <div className="relative z-10 text-center text-[#1c5134] w-[90%] sm:w-[80%] md:max-w-2xl px-4">
+    {/* Title */}
+    <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-10">
+      Cabelo & Make
+    </h2>
+
+    {/* Professionals List */}
+    <ul className="space-y-6 text-xs sm:text-sm md:text-base font-medium leading-relaxed">
+      <li>
+        <span className="font-bold text-base sm:text-lg md:text-xl">
+          Luciana e Mari
+        </span>
+        <br />
+        <span>Cabelo e maquiagem</span>
+        <br />
+        <span className="italic">14 99698-1685</span>
+        <br />
+        <a
+          href="https://www.instagram.com/lucianaliar.penteados"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#245a40] transition"
         >
-          {/* Background image – mobile */}
-          <div className="absolute inset-0 md:hidden">
-            <img
-              src="/images/cabelo-make-mobile.png" // 👈 replace with your mobile image
-              alt="Cabelo & Make - Fundo Mobile"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          @lucianaliar.penteados
+        </a>
+        <br />
+        <a
+          href="https://www.instagram.com/maariiiamakeup"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#245a40] transition"
+        >
+          @maariiiamakeup
+        </a>
+      </li>
 
-          {/* Background image – desktop */}
-          <div className="absolute inset-0 hidden md:block">
-            <img
-              src="/images/cabelo-make-desktop.png" // 👈 replace with your desktop image
-              alt="Cabelo & Make - Fundo Desktop"
-              className="w-full h-full object-cover"
-            />
-          </div>
+      <li>
+        <span className="font-bold text-base sm:text-lg md:text-xl">
+          Camila Karine
+        </span>
+        <br />
+        <span>
+          Cabelo e maquiagem{" "}
+          <span className="italic">(R$ 450)</span>
+        </span>
+        <br />
+        <span className="italic">63 99999-0143</span>
+        <br />
+        <a
+          href="https://www.instagram.com/camilakarinemakeup"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#245a40] transition"
+        >
+          @camilakarinemakeup
+        </a>
+      </li>
 
-          {/* Content */}
-          <div className="relative z-10 text-center text-[#1c5134] w-[90%] sm:w-[80%] md:max-w-2xl px-4">
-            {/* Title */}
-            <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-8">
-              Cabelo & Make
-            </h2>
+      <li>
+        <span className="font-bold text-base sm:text-lg md:text-xl">
+          Stephanie Santos
+        </span>
+        <br />
+        <span>
+          Maquiagem <span className="italic">(R$ 250)</span>
+        </span>
+        <br />
+        <span className="italic">14 99643-3558</span>
+        <br />
+        <a
+          href="https://www.instagram.com/stesantosmakeup"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#245a40] transition"
+        >
+          @stesantosmakeup
+        </a>
+      </li>
 
-            {/* Professionals List */}
-            <ul className="space-y-5 text-xs sm:text-sm md:text-base font-medium leading-relaxed">
-              <li>
-                <span className="font-bold text-base sm:text-lg md:text-xl">
-                  Luciana Liar
-                </span>
-                <br />
-                <span>Penteado</span>
-                <br />
-                <span className="italic">14 996981685</span>
-                <br />
-                <a
-                  href="https://www.instagram.com/lucianaliar.penteados?igsh=amM1YjFoaGp5aHg2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-[#245a40] transition"
-                >
-                  @lucianaliar.penteados
-                </a>
-              </li>
+      <li>
+        <span className="font-bold text-base sm:text-lg md:text-xl">
+          Monique Louro
+        </span>
+        <br />
+        <span>Cabelo e maquiagem</span>
+        <br />
+        <span className="italic">14 99623-2121</span>
+        <br />
+        <a
+          href="https://www.instagram.com/moniquelouromakeup"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#245a40] transition"
+        >
+          @moniquelouromakeup
+        </a>
+      </li>
 
-              <li>
-                <span className="font-bold text-base sm:text-lg md:text-xl">
-                  Camila Karine
-                </span>
-                <br />
-                <span>Cabelo e maquiagem</span>
-                <br />
-                <span className="italic">63 999990143</span>
-                <br />
-                <a
-                  href="https://www.instagram.com/camilakarinemakeup?igsh=MW9hZjN5ZzFmYThhNg=="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-[#245a40] transition"
-                >
-                  @camilakarinemakeup
-                </a>
-              </li>
+      <li>
+        <span className="font-bold text-base sm:text-lg md:text-xl">
+          Bruna
+        </span>
+        <br />
+        <span>Maquiagem</span>
+        <br />
+        <span className="italic">14 99696-7480</span>
+        <br />
+        <a
+          href="https://www.instagram.com/brucolella"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#245a40] transition"
+        >
+          @brucolella
+        </a>
+      </li>
 
-              <li>
-                <span className="font-bold text-base sm:text-lg md:text-xl">
-                  Stephanie Santos
-                </span>
-                <br />
-                <span>Cabelo e maquiagem</span>
-                <br />
-                <span className="italic">14 996433558</span>
-                <br />
-                <a
-                  href="https://www.instagram.com/stesantosmakeup?igsh=MWtnbnRlOTdtbm12cQ=="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-[#245a40] transition"
-                >
-                  @stesantosmakeup
-                </a>
-              </li>
+      <li>
+        <span className="font-bold text-base sm:text-lg md:text-xl">
+          Meire Rodrigues
+        </span>
+        <br />
+        <span>Maquiagem</span>
+        <br />
+        <span className="italic">14 99683-0403</span>
+        <br />
+        <a
+          href="https://www.instagram.com/meire_rodrigues_makeup"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#245a40] transition"
+        >
+          @meire_rodrigues_makeup
+        </a>
+      </li>
 
-              <li>
-                <span className="font-bold text-base sm:text-lg md:text-xl">
-                  Monique Louro
-                </span>
-                <br />
-                <span>Cabelo e maquiagem</span>
-                <br />
-                <span className="italic">14 996232121</span>
-                <br />
-                <a
-                  href="https://www.instagram.com/moniquelouromakeup?igsh=MXJ0amM5ajQ5d3IwbQ=="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-[#245a40] transition"
-                >
-                  @moniquelouromakeup
-                </a>
-              </li>
+      <li>
+        <span className="font-bold text-base sm:text-lg md:text-xl">
+          Salão Smalt (Mariane Azevedo)
+        </span>
+        <br />
+        <span>Cabelo e maquiagem</span>
+        <br />
+        <span className="italic">14 99758-7088</span>
+        <br />
+        <a
+          href="https://www.instagram.com/salaosmalt"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-[#245a40] transition"
+        >
+          @salaosmalt
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
 
-              <li>
-                <span className="font-bold text-base sm:text-lg md:text-xl">
-                  Bruna
-                </span>
-                <br />
-                <span>Maquiagem</span>
-                <br />
-                <span className="italic">14 996967480</span>
-                <br />
-                <a
-                  href="https://www.instagram.com/brucolella?igsh=dW4zY2NwbHAxYmw5"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-[#245a40] transition"
-                >
-                  @brucolella
-                </a>
-              </li>
-
-              <li>
-                <span className="font-bold text-base sm:text-lg md:text-xl">
-                  Meire Rodrigues
-                </span>
-                <br />
-                <span>Maquiagem</span>
-                <br />
-                <span className="italic">14 996830403</span>
-                <br />
-                <a
-                  href="https://www.instagram.com/meire_rodrigues_makeup?igsh=Z3Zja2N3cG5tMDY2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-[#245a40] transition"
-                >
-                  @meire_rodrigues_makeup
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
 
         {/* Presentes */}
         <section
