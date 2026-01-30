@@ -190,7 +190,14 @@ export default function Home() {
 
         <section
           id="como-chegar"
-          className="relative min-h-screen flex items-center justify-center overflow-hidden md:overflow-visible md:pt-16"
+          className="relative
+    min-h-screen
+    flex items-center justify-center
+    overflow-hidden md:overflow-visible
+
+    pt-24 pb-24
+    sm:pt-32 sm:pb-32
+    md:pt-40 md:pb-40"
         >
           {/* Background Video – Mobile */}
           <video
@@ -301,9 +308,18 @@ export default function Home() {
         {/* Dicas (link kept; no images) */}
         <section
           id="dicas"
-          className="relative min-h-screen flex items-center justify-center 
-             bg-[url('/images/dicas-bg-mobile.png')] md:bg-[url('/images/dicas-bg-desktop.png')]
-             bg-cover bg-center bg-no-repeat"
+          className="relative
+    min-h-screen
+    flex items-center justify-center
+
+    pt-32 pb-32
+    sm:pt-40 sm:pb-40
+    md:pt-56 md:pb-56
+    lg:pt-64 lg:pb-64
+
+    bg-[url('/images/dicas-bg-mobile.png')]
+    md:bg-[url('/images/dicas-bg-desktop.png')]
+    bg-cover bg-center bg-no-repeat"
         >
           {/* TEXT BOX */}
           <div
@@ -470,7 +486,15 @@ export default function Home() {
         {/* Cabelo & Make */}
         <section
           id="cabelo-make"
-          className="relative min-h-screen flex items-center justify-center overflow-hidden"
+          className="relative
+    min-h-screen
+    flex items-center justify-center
+    overflow-hidden
+
+    pt-32 pb-32
+    sm:pt-40 sm:pb-40
+    md:pt-56 md:pb-56
+    lg:pt-64 lg:pb-64"
         >
           {/* Background image – mobile */}
           <div className="absolute inset-0 md:hidden">
