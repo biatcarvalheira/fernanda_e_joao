@@ -179,7 +179,7 @@ export default function Home() {
                     Anexo Golf Avaré
                   </a>
                 </p>
-                <p>Horário: 15h</p>
+                <p>Horário: 14h30</p>
                 <p>Traje: Social</p>
               </div>
             </div>
@@ -345,13 +345,6 @@ export default function Home() {
                   Av. Prefeito Paulo Novaes, 1025, Avaré/SP
                 </span>
               </li>
-
-              <li>
-                <span className="font-semibold">Empório Pé de Café</span>
-                <br />
-                <span className="italic">Av. Ouro Verde, 318, Avaré/SP</span>
-              </li>
-
               <li>
                 <span className="font-semibold">Pizzaria Paulistana</span> |
                 (14) 3732-5318
@@ -558,7 +551,7 @@ export default function Home() {
         <br />
         <span>
           Cabelo e maquiagem{" "}
-          <span className="italic">(R$ 450)</span>
+          <span className="italic"></span>
         </span>
         <br />
         <span className="italic">63 99999-0143</span>
@@ -579,7 +572,7 @@ export default function Home() {
         </span>
         <br />
         <span>
-          Maquiagem <span className="italic">(R$ 250)</span>
+          Maquiagem <span className="italic"></span>
         </span>
         <br />
         <span className="italic">14 99643-3558</span>
