@@ -109,82 +109,108 @@ export default function Home() {
         </section>
 
         {/* Programacao */}
-        <section
-          id="programacao"
-          className="relative min-h-screen flex items-center justify-center 
-             bg-[url('/images/programacao-bg-mobile.png')] md:bg-[url('/images/programacao-bg-desktop.png')]
-             bg-cover bg-center bg-no-repeat"
-        >
-          {/* TEXT BOX */}
-          <div
-            className="
+<section
+  id="programacao"
+  className="relative min-h-screen flex items-center justify-center 
+    bg-[url('/images/programacao-bg-mobile.png')] md:bg-[url('/images/programacao-bg-desktop.png')]
+    bg-cover bg-center bg-no-repeat"
+>
+  {/* TEXT BOX */}
+  <div
+    className="
       relative z-10 text-center
-      w-[90%] sm:w-[80%] md:max-w-2xl
-      px-4
-      max-[400px]:max-w-[160px]
-      max-[400px]:min-h-[260px]
-      max-[400px]:px-2
-      max-[400px]:py-4
-      max-[400px]:flex max-[400px]:flex-col max-[400px]:justify-center
+      w-[85%] sm:w-[75%]
+      max-w-[280px] sm:max-w-md md:max-w-lg
+      px-3 sm:px-6
+      py-6 sm:py-8
     "
+  >
+    <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-5">
+      Programação
+    </h2>
+
+    {/* 1️⃣ Pré-Wedding */}
+    <div className="mb-6">
+      <p className="text-[#1c5134] text-[0.7rem] sm:text-xs font-bold">
+        18/04/2026
+      </p>
+
+      <p className="text-[#1c5134] text-xl sm:text-2xl italic mt-1 font-style-script">
+        Festa de Boas-Vindas
+      </p>
+
+      <div className="text-[#1c5134] text-[0.75rem] sm:text-sm font-medium leading-relaxed mt-2 space-y-0.5">
+        <p>Local: A definir</p>
+        <p>Horário: 13h</p>
+        <p>Traje: Roupas leves e de banho</p>
+
+        <p className="pt-1 text-[0.7rem] italic">
+          <a
+            href="/images/moodboard-pre-wedding.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 hover:opacity-80 transition"
           >
-            <h2 className="font-style-script text-[#1c5134] text-3xl sm:text-4xl md:text-5xl italic tracking-wide mb-6">
-              Programação
-            </h2>
-            {/* 1️⃣ Pré-Wedding */}
-            <div className="mb-8">
-              <p className="text-[#1c5134] text-[0.7rem] sm:text-xs md:text-sm font-bold">
-                18/04/2026
-              </p>
-              <p className="text-[#1c5134] text-xl sm:text-2xl md:text-3xl italic mt-1 font-style-script">
-                Festa de Boas-Vindas
-              </p>
-              <div className="text-[#1c5134] text-[0.8rem] sm:text-sm md:text-base font-medium leading-relaxed mt-3 space-y-1">
-                <p>Local: A definir</p>
-                <p>Horário: 13h</p>
-                <p>Traje: Roupas leves e de banho</p>
-              </div>
-            </div>
+            inspiração & dress code
+          </a>
+        </p>
+      </div>
+    </div>
 
-            {/* 2️⃣ Cerimônia */}
-            <div className="mb-8">
-              <p className="text-[#1c5134] text-[0.7rem] sm:text-xs md:text-sm font-bold">
-                19/04/2026
-              </p>
-              <p className="text-[#1c5134] text-xl sm:text-2xl md:text-3xl italic mt-1 font-style-script">
-                Dia Livre
-              </p>
-              <p className="text-[#1c5134] text-[0.7rem] sm:text-xs md:text-sm font-medium leading-relaxed mt-3">
-                Consulte as dicas para restaurantes e atividades
-              </p>
-            </div>
+    {/* 2️⃣ Dia Livre */}
+    <div className="mb-6">
+      <p className="text-[#1c5134] text-[0.7rem] sm:text-xs font-bold">
+        19/04/2026
+      </p>
 
-            {/* 3️⃣ Festa */}
-            <div>
-              <p className="text-[#1c5134] text-[0.7rem] sm:text-xs md:text-sm font-bold">
-                20/04/2026
-              </p>
-              <p className="text-[#1c5134] text-xl sm:text-2xl md:text-3xl italic mt-1 font-style-script">
-                Casamento
-              </p>
-              <div className="text-[#1c5134] text-[0.8rem] sm:text-sm md:text-base font-medium leading-relaxed mt-3 space-y-1">
-                <p>
-                  Local:{" "}
-                  <a
-                    href="https://www.google.com/maps/search/?api=1&query=Anexo+Golf+Avar%C3%A9"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline underline-offset-2 hover:opacity-80 transition"
-                  >
-                    Anexo Golf Avaré
-                  </a>
-                </p>
-                <p>Horário: 14h30</p>
-                <p>Traje: Social</p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <p className="text-[#1c5134] text-xl sm:text-2xl italic mt-1 font-style-script">
+        Dia Livre
+      </p>
+
+      <p className="text-[#1c5134] text-[0.7rem] sm:text-xs font-medium leading-relaxed mt-2">
+        Consulte as dicas para restaurantes e atividades
+      </p>
+    </div>
+
+    {/* 3️⃣ Casamento */}
+    <div>
+      <p className="text-[#1c5134] text-[0.7rem] sm:text-xs font-bold">
+        20/04/2026
+      </p>
+
+      <p className="text-[#1c5134] text-xl sm:text-2xl italic mt-1 font-style-script">
+        Casamento
+      </p>
+
+      <div className="text-[#1c5134] text-[0.75rem] sm:text-sm font-medium leading-relaxed mt-2 space-y-0.5">
+        <p>
+          Local:{" "}
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Anexo+Golf+Avar%C3%A9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 hover:opacity-80 transition"
+          >
+            Anexo Golf Avaré
+          </a>
+        </p>
+        <p>Horário: 14h30</p>
+        <p>Traje: Social</p>
+
+        <p className="pt-1 text-[0.7rem] italic">
+          <a
+            href="/images/moodboard-casamento.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 hover:opacity-80 transition"
+          >
+            inspiração & dress code
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* Como chegar*/}
 
