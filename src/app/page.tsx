@@ -140,7 +140,15 @@ export default function Home() {
       </p>
 
       <div className="text-[#1c5134] text-[0.75rem] sm:text-sm font-medium leading-relaxed mt-2 space-y-0.5">
-        <p>Local: A definir</p>
+        <p>
+          <a
+            href="https://maps.app.goo.gl/vjfGTiXgvt7YgQge6?g_st=iw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 hover:opacity-80 transition"
+          >Local
+          </a>
+        </p>
         <p>Horário: 13h</p>
         <p>Traje: Roupas leves e de banho</p>
 
